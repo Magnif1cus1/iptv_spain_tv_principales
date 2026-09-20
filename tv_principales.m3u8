@@ -5,20 +5,11 @@
 # Fuente: Free-TV España - https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_spain.m3u8
 # Fuente: Teleonline - https://raw.githubusercontent.com/teleonline/listas/main/tv.m3u8
 
-#EXTINF:-1 tvg-id="La1.TV" tvg-logo="https://graph.facebook.com/la1detve/picture?width=200&height=200" group-title="Favoritos España" tvg-name="La 1",La 1 — Fuente 1
-https://rtvelivestream.rtve.es/rtvesec/la1/la1_main_dvr.m3u8
-
-#EXTINF:-1 tvg-id="La1.TV" tvg-logo="https://graph.facebook.com/la1detve/picture?width=200&height=200" group-title="Favoritos España" tvg-name="La 1",La 1 — Fuente 2
+#EXTINF:-1 tvg-id="La1.TV" tvg-logo="https://graph.facebook.com/la1detve/picture?width=200&height=200" group-title="Favoritos España" tvg-name="La 1",La 1
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=15619&avod=1&coppa=0&td=6&is_lat=[LMT]&dnt=[DNS]&us_privacy=[US_PRIVACY]&did=[DEVICE_ID]&ip=[IP]&ua=[UA]&ifa_type=[IFA_TYPE]&app_bundle=[APP_BUNDLE]
 
-#EXTINF:-1 tvg-id="La2.TV" tvg-logo="https://graph.facebook.com/la2detve/picture?width=200&height=200" group-title="Favoritos España" tvg-name="La 2",La 2 — Fuente 1
-https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8
-
-#EXTINF:-1 tvg-id="La2.TV" tvg-logo="https://graph.facebook.com/la2detve/picture?width=200&height=200" group-title="Favoritos España" tvg-name="La 2",La 2 — Fuente 2
+#EXTINF:-1 tvg-id="La2.TV" tvg-logo="https://graph.facebook.com/la2detve/picture?width=200&height=200" group-title="Favoritos España" tvg-name="La 2",La 2
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=15618
-
-#EXTINF:-1 tvg-name="La 2" tvg-id="La2.es@SD" tvg-logo="https://i.ibb.co/rfsr9PSh/La-2.png" group-title="Favoritos España",La 2 — Fuente 3
-https://rtvelivestream.rtve.es/rtvesec/la2/la2_main.m3u8
 
 #EXTINF:-1 tvg-id="24Horas.TV" tvg-logo="https://pbs.twimg.com/profile_images/1634293543987453954/mb1Rzmso_200x200.jpg" group-title="Favoritos España" tvg-name="24h",24h — Fuente 1
 https://ztnr.rtve.es/ztnr/1694255.m3u8
@@ -30,24 +21,15 @@ https://rtvelivestream.rtve.es/rtvesec/24h/24h_main_dvr.m3u8
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=15621
 
 #EXTINF:-1 tvg-id="TDP.TV" tvg-logo="https://graph.facebook.com/teledeporteRTVE/picture?width=200&height=200" group-title="Favoritos España" tvg-name="Teledeporte",Teledeporte — Fuente 1
-https://rtvelivestream.rtve.es/rtvesec/tdp/tdp_main.m3u8
-
-#EXTINF:-1 tvg-id="TDP.TV" tvg-logo="https://graph.facebook.com/teledeporteRTVE/picture?width=200&height=200" group-title="Favoritos España" tvg-name="Teledeporte",Teledeporte — Fuente 2
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=15601&avod=1&coppa=0&td=6&is_lat=[LMT]&dnt=[DNS]&us_privacy=[US_PRIVACY]&did=[DEVICE_ID]&ip=[IP]&ua=[UA]&ifa_type=[IFA_TYPE]&app_bundle=[APP_BUNDLE]
 
-#EXTINF:-1 tvg-name="Teledeporte" tvg-id="Teledeporte.es@SD" tvg-logo="https://i.ibb.co/0jxLdjnY/TDP.png" group-title="Favoritos España",Teledeporte — Fuente 3
+#EXTINF:-1 tvg-name="Teledeporte" tvg-id="Teledeporte.es@SD" tvg-logo="https://i.ibb.co/0jxLdjnY/TDP.png" group-title="Favoritos España",Teledeporte — Fuente 2
 https://rtve01p.origin.c21livecloud.com/live-origin/tdp-hls/bitrate_1.m3u8
 
 #EXTINF:-1 tvg-id="Clan.TV" tvg-logo="https://graph.facebook.com/clantve/picture?width=200&height=200" group-title="Favoritos España" tvg-name="Clan",Clan — Fuente 1
-https://ztnr.rtve.es/ztnr/5466990.m3u8
-
-#EXTINF:-1 tvg-id="Clan.TV" tvg-logo="https://graph.facebook.com/clantve/picture?width=200&height=200" group-title="Favoritos España" tvg-name="Clan",Clan — Fuente 2
-https://rtvelivestream.rtve.es/rtvesec/clan/clan_main_dvr.m3u8
-
-#EXTINF:-1 tvg-id="Clan.TV" tvg-logo="https://graph.facebook.com/clantve/picture?width=200&height=200" group-title="Favoritos España" tvg-name="Clan",Clan — Fuente 3
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=15620
 
-#EXTINF:-1 tvg-name="Clan" tvg-id="Clan.es@SD" tvg-logo="https://i.ibb.co/vv3FC2Nv/clan.png" group-title="Favoritos España",Clan — Fuente 4
+#EXTINF:-1 tvg-name="Clan" tvg-id="Clan.es@SD" tvg-logo="https://i.ibb.co/vv3FC2Nv/clan.png" group-title="Favoritos España",Clan — Fuente 2
 https://lge-lgla2.otteravision.com/lge/lgcla/lgcla.m3u8
 
 #EXTINF:-1 tvg-id="13.TV" tvg-logo="https://graph.facebook.com/TRECEtves/picture?width=200&height=200" group-title="Favoritos España" tvg-name="TRECE",TRECE — Fuente 1
@@ -64,9 +46,6 @@ https://tsw.streamingwebtv24.it:1936/inteccdn1/inteccdn1/playlist.m3u8
 
 #EXTINF:-1 tvg-name="BOM Cine" tvg-logo="https://i.imgur.com/cqhofMU.png" tvg-id="BomCine.es" tvg-chno="26" tvg-country="ES" group-title="Favoritos España",BOM Cine
 https://tsw.streamingwebtv24.it:1936/inteccdn3/inteccdn3/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Euronews.TV" tvg-logo="https://graph.facebook.com/es.euronews/picture?width=200&height=200" group-title="Favoritos España" tvg-name="Euronews",Euronews
-https://euronews-live-spa-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6571/bitok/eyJzdGlkIjoiMDA0YjY0NTMtYjY2MC00ZTZkLTlkNzEtMTk3YTM3ZDZhZWIxIiwibWt0IjoiZXMiLCJjaCI6NjU3MSwicHRmIjoxfQ==/26034/euronews-es.m3u8
 
 #EXTINF:-1 tvg-id="ElToroTV.TV" tvg-logo="https://graph.facebook.com/eltorotv.es/picture?width=200&height=200" group-title="Favoritos España" tvg-name="El Toro TV",El Toro TV — Fuente 1
 https://streaming-1.eltorotv.com/lb0/eltorotv-streaming-web/index.m3u8
@@ -95,6 +74,9 @@ https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
 #EXTINF:-1 tvg-id="RMTV.TV" tvg-logo="https://graph.facebook.com/RealMadrid/picture?width=200&height=200" group-title="Favoritos España" tvg-name="Real Madrid TV",Real Madrid TV — Fuente 2
 https://rmtv.akamaized.net/hls/live/2043154/rmtv-en-web/master.m3u8
 
+#EXTINF:-1 tvg-name="Telemadrid" tvg-id="Telemadrid.es@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/TeleMadrid.svg/960px-TeleMadrid.svg.png" group-title="Favoritos España",Telemadrid
+https://live.telemadrid.cross-media.es/6389770581112/eu-central-1/6416060453001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiajI5YjgyLmVncmVzcy5haGc3NmwiLCJhY2NvdW50X2lkIjoiNjQxNjA2MDQ1MzAwMSIsImVobiI6ImxpdmUudGVsZW1hZHJpZC5jcm9zcy1tZWRpYS5lcyIsImlzcyI6ImJsaXZlLXBsYXliYWNrLXNvdXJjZS1hcGkiLCJzdWIiOiJwYXRobWFwdG9rZW4iLCJhdWQiOlsiNjQxNjA2MDQ1MzAwMSJdLCJqdGkiOiI2Mzg5NzcwNTgxMTEyIn0.kqriAMUkHT6m0V6wkCHJum_EUyL4PAi1zJMKlfmYHEU/playlist-hls.m3u8
+
 #EXTINF:-1 tvg-id="LaOtra.TV" tvg-name="La Otra" tvg-logo="https://pbs.twimg.com/profile_images/1279727978268839938/jSZUiboT_200x200.jpg" group-title="Favoritos España",La Otra
 https://live.telemadrid.cross-media.es/6389770474112/eu-central-1/6416060453001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiajI5YjgyLmVncmVzcy5haGc3NmwiLCJhY2NvdW50X2lkIjoiNjQxNjA2MDQ1MzAwMSIsImVobiI6ImxpdmUudGVsZW1hZHJpZC5jcm9zcy1tZWRpYS5lcyIsImlzcyI6ImJsaXZlLXBsYXliYWNrLXNvdXJjZS1hcGkiLCJzdWIiOiJwYXRobWFwdG9rZW4iLCJhdWQiOlsiNjQxNjA2MDQ1MzAwMSJdLCJqdGkiOiI2Mzg5NzcwNDc0MTEyIn0.1KSxZK60xNAZZsa7dbYR8Equ8aG930d6qFDsYKUmmdE/playlist-hls.m3u8
 
@@ -122,85 +104,22 @@ https://rtva-channel42.flumotion.cloud/playlist.m3u8
 #EXTINF:-1 tvg-name="Canal Sur Más Noticias" tvg-id="CanalSurNoticias.es@SD" tvg-logo="https://i.imgur.com/A3JscwS.png" group-title="Favoritos España",Canal Sur Más Noticias — Fuente 2
 https://cdnlive.codev8.net/rtvalive/smil:channel42.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TV3.TV" tvg-logo="https://pbs.twimg.com/profile_images/1269286508625891328/rVes9BS__200x200.png" group-title="Favoritos España" tvg-name="TV3",TV3
-https://directes3-tv-cat.3catdirectes.cat/live-content/tv3-hls/master.m3u8
-
-#EXTINF:-1 tvg-id="TVC.TV" tvg-logo="https://pbs.twimg.com/profile_images/1269286508625891328/rVes9BS__200x200.png" group-title="Favoritos España" tvg-name="TV3 CAT",TV3 CAT — Fuente 1
-https://directes-tv-es.3catdirectes.cat/live-content/tvc-hls/master.m3u8
-
-#EXTINF:-1 tvg-id="TVC.TV" tvg-logo="https://pbs.twimg.com/profile_images/1269286508625891328/rVes9BS__200x200.png" group-title="Favoritos España" tvg-name="TV3 CAT",TV3 CAT — Fuente 2
-https://directes-tv-es.3catdirectes.cat/live-origin/tvc-hls/master.m3u8
-
-#EXTINF:-1 tvg-id="TVC.TV" tvg-logo="https://pbs.twimg.com/profile_images/1269286508625891328/rVes9BS__200x200.png" group-title="Favoritos España" tvg-name="TV3 CAT",TV3 CAT — Fuente 3
+#EXTINF:-1 tvg-id="TVC.TV" tvg-logo="https://pbs.twimg.com/profile_images/1269286508625891328/rVes9BS__200x200.png" group-title="Favoritos España" tvg-name="TV3 CAT",TV3 CAT
 https://directes3-tv-int.3catdirectes.cat/live-content/tvi-hls/master.m3u8
 
-#EXTINF:-1 tvg-name="TV3 CAT" tvg-id="TV3CAT.es@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/TV3CAT.svg/960px-TV3CAT.svg.png" group-title="Favoritos España",TV3 CAT — Fuente 4
-https://directes3-tv-es.3catdirectes.cat/live-content/tvc-hls/master.m3u8
-
 #EXTINF:-1 tvg-id="324.TV" tvg-logo="https://pbs.twimg.com/profile_images/1968163923477098496/blka6O_j_200x200.jpg" group-title="Favoritos España" tvg-name="3CatInfo",3CatInfo — Fuente 1
-https://directes-tv-cat.3catdirectes.cat/live-content/canal324-hls/master.m3u8
-
-#EXTINF:-1 tvg-id="324.TV" tvg-logo="https://pbs.twimg.com/profile_images/1968163923477098496/blka6O_j_200x200.jpg" group-title="Favoritos España" tvg-name="3CatInfo",3CatInfo — Fuente 2
-https://directes-tv-cat.3catdirectes.cat/live-origin/canal324-hls/master.m3u8
-
-#EXTINF:-1 tvg-id="324.TV" tvg-logo="https://pbs.twimg.com/profile_images/1968163923477098496/blka6O_j_200x200.jpg" group-title="Favoritos España" tvg-name="3CatInfo",3CatInfo — Fuente 3
-https://directes-tv-es.3catdirectes.cat/live-content/canal324-hls/master.m3u8
-
-#EXTINF:-1 tvg-id="324.TV" tvg-logo="https://pbs.twimg.com/profile_images/1968163923477098496/blka6O_j_200x200.jpg" group-title="Favoritos España" tvg-name="3CatInfo",3CatInfo — Fuente 4
-https://directes-tv-es.3catdirectes.cat/live-origin/canal324-hls/master.m3u8
-
-#EXTINF:-1 tvg-id="324.TV" tvg-logo="https://pbs.twimg.com/profile_images/1968163923477098496/blka6O_j_200x200.jpg" group-title="Favoritos España" tvg-name="3CatInfo",3CatInfo — Fuente 5
 https://directes-tv-int.3catdirectes.cat/live-content/canal324-hls/master.m3u8
 
-#EXTINF:-1 tvg-id="324.TV" tvg-logo="https://pbs.twimg.com/profile_images/1968163923477098496/blka6O_j_200x200.jpg" group-title="Favoritos España" tvg-name="3CatInfo",3CatInfo — Fuente 6
+#EXTINF:-1 tvg-id="324.TV" tvg-logo="https://pbs.twimg.com/profile_images/1968163923477098496/blka6O_j_200x200.jpg" group-title="Favoritos España" tvg-name="3CatInfo",3CatInfo — Fuente 2
 https://directes-tv-int.3catdirectes.cat/live-origin/canal324-hls/master.m3u8
-
-#EXTINF:-1 tvg-id="C33.TV" tvg-logo="https://graph.facebook.com/Canal33/picture?width=200&height=200" group-title="Favoritos España" tvg-name="33",33 — Fuente 1
-https://directes-tv-cat.3catdirectes.cat/live-content/c33-super3-hls/master.m3u8
-
-#EXTINF:-1 tvg-id="C33.TV" tvg-logo="https://graph.facebook.com/Canal33/picture?width=200&height=200" group-title="Favoritos España" tvg-name="33",33 — Fuente 2
-https://directes-tv-cat.3catdirectes.cat/live-origin/c33-super3-hls/master.m3u8
-
-#EXTINF:-1 tvg-id="C33.TV" tvg-logo="https://graph.facebook.com/Canal33/picture?width=200&height=200" group-title="Favoritos España" tvg-name="33",33 — Fuente 3
-https://directes-tv-es.3catdirectes.cat/live-content/c33-super3-hls/master.m3u8
-
-#EXTINF:-1 tvg-id="C33.TV" tvg-logo="https://graph.facebook.com/Canal33/picture?width=200&height=200" group-title="Favoritos España" tvg-name="33",33 — Fuente 4
-https://directes-tv-es.3catdirectes.cat/live-origin/c33-super3-hls/master.m3u8
-
-#EXTINF:-1 tvg-id="SX3.TV" tvg-logo="https://graph.facebook.com/SomSX3/picture?width=200&height=200" group-title="Favoritos España" tvg-name="SX3",SX3 — Fuente 1
-https://directes-tv-cat.3catdirectes.cat/live-content/super3-hls/master.m3u8
-
-#EXTINF:-1 tvg-id="SX3.TV" tvg-logo="https://graph.facebook.com/SomSX3/picture?width=200&height=200" group-title="Favoritos España" tvg-name="SX3",SX3 — Fuente 2
-https://directes-tv-cat.3catdirectes.cat/live-origin/super3-hls/master.m3u8
-
-#EXTINF:-1 tvg-id="SX3.TV" tvg-logo="https://graph.facebook.com/SomSX3/picture?width=200&height=200" group-title="Favoritos España" tvg-name="SX3",SX3 — Fuente 3
-https://directes-tv-es.3catdirectes.cat/live-content/super3-hls/master.m3u8
-
-#EXTINF:-1 tvg-id="SX3.TV" tvg-logo="https://graph.facebook.com/SomSX3/picture?width=200&height=200" group-title="Favoritos España" tvg-name="SX3",SX3 — Fuente 4
-https://directes-tv-es.3catdirectes.cat/live-origin/super3-hls/master.m3u8
-
-#EXTINF:-1 tvg-id="E3.TV" tvg-logo="https://graph.facebook.com/Esport3/picture?width=200&height=200" group-title="Favoritos España" tvg-name="Esport3",Esport3 — Fuente 1
-https://directes-tv-cat.3catdirectes.cat/live-origin/esport3-hls/master.m3u8
-
-#EXTINF:-1 tvg-id="E3.TV" tvg-logo="https://graph.facebook.com/Esport3/picture?width=200&height=200" group-title="Favoritos España" tvg-name="Esport3",Esport3 — Fuente 2
-https://directes-tv-es.3catdirectes.cat/live-origin/esport3-hls/master.m3u8
-
-#EXTINF:-1 tvg-name="Esport3" tvg-id="Esport3.es@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Esport3.svg/960px-Esport3.svg.png" group-title="Favoritos España",Esport3 — Fuente 3
-https://directes-tv-cat.3catdirectes.cat/live-content/esport3-hls/master.m3u8
 
 #EXTINF:-1 tvg-id="APUNT.TV" tvg-logo="https://graph.facebook.com/apuntmedia/picture?width=200&height=200" group-title="Favoritos España" tvg-name="À Punt",À Punt
 https://fastly.live.brightcove.com/1846756479408303045/eu-central-1/6057955885001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiZWFxNWh4LmVncmVzcy53YzQ3bTEiLCJhY2NvdW50X2lkIjoiNjA1Nzk1NTg4NTAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2MDU3OTU1ODg1MDAxIl0sImp0aSI6IjE4NDY3NTY0Nzk0MDgzMDMwNDUifQ.o6wb_VA-TVxl3ERgr7FKLlaTjY7smErmsf73QAydySE/playlist-hls-dvr.m3u8
 
-#EXTINF:-1 tvg-id="ETB1.TV" tvg-logo="https://graph.facebook.com/eitb/picture?width=200&height=200" group-title="Favoritos España" tvg-name="ETB 1",ETB 1 — Fuente 1
-https://cdn1.etbon.eus/etb1/index.m3u8
-
-#EXTINF:-1 tvg-name="ETB 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/ETB1_2022_logo.svg/500px-ETB1_2022_logo.svg.png" tvg-id="ETB1.es" tvg-chno="10" tvg-country="ES" group-title="Favoritos España",ETB 1 — Fuente 2
+#EXTINF:-1 tvg-name="ETB 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/ETB1_2022_logo.svg/500px-ETB1_2022_logo.svg.png" tvg-id="ETB1.es" tvg-chno="10" tvg-country="ES" group-title="Favoritos España",ETB 1
 https://multimedia.eitb.eus/live-content/etb1hd-hls/master.m3u8
 
-#EXTINF:-1 tvg-id="ETB2.TV" tvg-logo="https://graph.facebook.com/eitb/picture?width=200&height=200" group-title="Favoritos España" tvg-name="ETB 2",ETB 2 — Fuente 1
-https://cdn1.etbon.eus/etb2/index.m3u8
-
-#EXTINF:-1 tvg-name="ETB 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/ETB2_2022_logo.svg/500px-ETB2_2022_logo.svg.png" tvg-id="ETB2.es" tvg-chno="11" tvg-country="ES" group-title="Favoritos España",ETB 2 — Fuente 2
+#EXTINF:-1 tvg-name="ETB 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/ETB2_2022_logo.svg/500px-ETB2_2022_logo.svg.png" tvg-id="ETB2.es" tvg-chno="11" tvg-country="ES" group-title="Favoritos España",ETB 2
 https://multimedia.eitb.eus/live-content/etb2hd-hls/master.m3u8
 
 #EXTINF:-1 tvg-id="CMM.TV" tvg-logo="https://graph.facebook.com/CMMediaes/picture?width=200&height=200" group-title="Favoritos España" tvg-name="Castilla-La Mancha Media",Castilla-La Mancha Media — Fuente 1
@@ -240,10 +159,7 @@ https://cdnapisec.kaltura.com/p/2346171/sp/234617100/playManifest/entryId/1_vfib
 #EXTINF:-1 tvg-id="BTV.TV" tvg-name="betevé" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Betev%C3%A9.png" group-title="Favoritos España",betevé — Fuente 2
 https://cdnapisec.kaltura.com/p/2346171/sp/234617100/playManifest/entryId/1_vfibi2fe/format/applehttp/protocol/https/uiConfId/42816492/a.m3u8?referrer=aHR0cHM6Ly9iZXRldmUuY2F0
 
-#EXTINF:-1 tvg-id="BonDiaTV_CAT.TV" tvg-logo="https://www.bondiatv.org/img/icon/apple-touch-icon.png" group-title="Favoritos España" tvg-name="Bon Dia TV",Bon Dia TV — Fuente 1
-https://directes-tv-cat.3catdirectes.cat/live-content/bondia-hls/master.m3u8
-
-#EXTINF:-1 tvg-id="BonDiaTV_CAT.TV" tvg-logo="https://www.bondiatv.org/img/icon/apple-touch-icon.png" group-title="Favoritos España" tvg-name="Bon Dia TV",Bon Dia TV — Fuente 2
+#EXTINF:-1 tvg-id="BonDiaTV_CAT.TV" tvg-logo="https://www.bondiatv.org/img/icon/apple-touch-icon.png" group-title="Favoritos España" tvg-name="Bon Dia TV",Bon Dia TV
 https://directes-tv-int.3catdirectes.cat/live-content/bondia-hls/master.m3u8
 
 #EXTINF:-1 tvg-id="8M.TV" tvg-logo="https://graph.facebook.com/la8mediterraneo/picture?width=200&height=200" group-title="Favoritos España" tvg-name="La 8 Mediterráneo",La 8 Mediterráneo
