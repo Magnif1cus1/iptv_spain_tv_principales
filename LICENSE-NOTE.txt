@@ -1,4 +1,8 @@
 Este paquete contiene código original para filtrar/generar la playlist.
-Los datos que descargue en ejecución proceden de TDTChannels y deben conservar su atribución correspondiente.
-Consulta la licencia vigente del proyecto fuente en:
+Los datos que descargue en ejecución proceden de las listas públicas configuradas
+en channels.json y deben conservar su atribución correspondiente.
+Consulta las licencias y condiciones vigentes de los proyectos fuente:
 https://github.com/LaQuay/TDTChannels
+https://github.com/iptv-org/iptv
+https://github.com/Free-TV/IPTV
+https://github.com/teleonline/listas

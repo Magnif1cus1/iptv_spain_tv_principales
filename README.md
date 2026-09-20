@@ -1,13 +1,18 @@
 # TDT Favoritos Auto
 
-Genera automáticamente una lista M3U8 pequeña para VLC a partir de la lista pública de **TDTChannels**, conservando varias fuentes cuando TDTChannels publica más de una para el mismo canal.
+Genera automáticamente una lista M3U8 para VLC combinando **cuatro listas públicas**,
+con un filtro de **62 canales nacionales, autonómicos y locales** y varias fuentes por canal.
 
 ## Qué hace
 
-- Descarga `https://www.tdtchannels.com/lists/tv.m3u8`.
+- Descarga TDTChannels, IPTV-org España, Free-TV España y Teleonline, configuradas en `channels.json`.
 - Conserva únicamente los canales de `channels.json`.
+- Reconoce variantes de calidad como `HD` o `(1080p)` sin confundir canales regionales o internacionales con el nacional.
+- Elimina URLs repetidas entre listas y conserva las opciones de reproducción de VLC.
 - Si un canal tiene varias fuentes, aparecen como `Canal — Fuente 1`, `Canal — Fuente 2`, etc.
-- No inventa ni rescata enlaces antiguos: si TDTChannels no ofrece un stream reproducible, el canal se marca como ausente en `estado.md`.
+- Comprueba cada enlace HLS: manifiesto, variante, inicialización si existe y parte de un fragmento multimedia. Reintenta los fallos una vez y descarta HTML, enlaces caídos y DRM no compatible.
+- Publica solo los enlaces que superan esa comprobación; `estado.md` y `estado.json` detallan canales ausentes, procedencia y errores.
+- Si una lista falla, continúa con las demás. Si ninguna funciona o ningún canal supera la comprobación, termina con error y conserva la publicación anterior.
 - GitHub Actions vuelve a generar la lista todos los días y también al cambiar la configuración.
 - No necesitas servidor, PC encendido, Docker ni Threadfin.
 
@@ -40,7 +45,8 @@ En VLC:
 
 **Medio > Abrir ubicación de red** (`Ctrl+N`) y pega esa URL.
 
-Para ver la lista: **Ctrl+L**.
+Para ver la lista: **Ctrl+L** y selecciona **Playlist** en la barra lateral.
+Después de una actualización, vuelve a abrir la URL con `Ctrl+N` para cargar los canales nuevos.
 
 ### Si la URL devuelve 404 tras una ejecución correcta
 
@@ -74,9 +80,37 @@ Al guardar el cambio en `main`, GitHub Actions regenera la lista.
 
 ## Canales incluidos como objetivo
 
-La 1, La 2, Antena 3, Cuatro, Telecinco, laSexta, 24h, Teledeporte, Clan, FDF, Energy, Divinity, Be Mad, DMAX, TRECE, Neox, Nova, Mega, Atreseries, Boing, DKISS, Ten, Real Madrid TV, TVG, TVG 2, Telemiño y TeleVigo.
+El filtro incluye La 1, La 2, Antena 3, Cuatro, Telecinco, laSexta, 24h, Teledeporte,
+Clan, FDF, Energy, Divinity, Be Mad, DMAX, TRECE, Neox, Nova, Mega, Atreseries,
+Boing, DKISS, Ten, Squirrel, BOM Cine, GOL Play, Euronews, El Toro TV,
+Negocios TV, El País, RNE para todos y Real Madrid TV.
 
-**Importante:** estar en esta lista de objetivos no garantiza que exista un M3U8 directo. `estado.md` muestra cuáles existen en la publicación de TDTChannels de ese día.
+También busca Telemadrid, La Otra, Canal Sur Andalucía, Canal Sur 2, Canal Sur Más
+Noticias, TV3, TV3 CAT, 3CatInfo, 33, SX3, Esport3, À Punt, Aragón TV, ETB 1, ETB 2,
+Castilla-La Mancha Media, Canal Extremadura, TV Canaria, IB3, TPA, La 7 Murcia,
+La 7 Castilla y León, TVG, TVG 2, Telemiño, TeleVigo, betevé, Bon Dia TV,
+La 8 Mediterráneo, Distrito TV y Sol Música.
+
+**El filtro no garantiza disponibilidad.** En las comprobaciones del 21/09/2026,
+los enlaces encontrados para Antena 3, Cuatro, Telecinco y laSexta no funcionaron.
+No se incluyen enlaces web como si fueran vídeo ni se sustituye Antena 3 por
+Antena 3 Internacional. Estos canales siguen en el filtro y se incorporarán
+automáticamente si una lista ofrece un enlace que supere la comprobación.
+
+La comprobación verifica acceso a datos multimedia, **no una reproducción completa
+en VLC**. Un enlace puede caducar o estar limitado geográficamente: GitHub Actions
+comprueba desde su servidor, cuya ubicación puede ser diferente a la tuya.
+
+## Añadir listas de origen
+
+Añade un objeto a `sources` en `channels.json`:
+
+```json
+{"name": "Nombre de la lista", "url": "https://ejemplo.com/lista.m3u8"}
+```
+
+Se admiten listas M3U/M3U8 con streams HTTP(S) HLS. Las listas se consultan por
+orden de prioridad; ante una URL repetida se conserva la primera entrada.
 
 ## Ejecutarlo manualmente en un PC (opcional)
 
@@ -88,11 +122,28 @@ python scripts/build_playlist.py
 
 Requiere Python 3.10 o superior.
 
-## Fuente y atribución
+Pruebas del generador, validación y publicación (requieren Git y Bash; Git Bash en Windows):
 
-Los datos de canales/streams proceden de TDTChannels:
+```bash
+python -m unittest discover -s tests -v
+```
 
-https://github.com/LaQuay/TDTChannels
+Para probar un archivo local sin acceder a sus streams:
 
-Este repositorio no redistribuye vídeo; genera una playlist con las URLs publicadas por la fuente en el momento de la actualización.
-# iptv_spain_tv_principales
+```bash
+python scripts/build_playlist.py --input-file tests/sample.m3u8 --skip-validation --output prueba.m3u8 --status-md prueba.md --status-json prueba.json
+```
+
+`--skip-validation` es solo para diagnóstico. El workflow siempre comprueba los streams.
+`--source-url URL` permite sustituir las fuentes configuradas y se puede repetir.
+
+## Fuentes y atribución
+
+- [TDTChannels](https://github.com/LaQuay/TDTChannels)
+- [IPTV-org](https://github.com/iptv-org/iptv)
+- [Free-TV](https://github.com/Free-TV/IPTV)
+- [Teleonline](https://github.com/teleonline/listas)
+
+Este repositorio no redistribuye vídeo; genera una playlist con las URLs publicadas
+por esas fuentes en el momento de la actualización. Conserva su atribución y consulta
+las condiciones de cada proyecto de origen.

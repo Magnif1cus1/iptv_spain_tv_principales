@@ -1,8 +1,25 @@
 {
-  "generated_at_utc": "2026-09-20T22:07:10+00:00",
-  "source": "https://www.tdtchannels.com/lists/tv.m3u8",
-  "requested_channels": 27,
-  "available_channels": 11,
+  "generated_at_utc": "2026-09-20T22:21:10+00:00",
+  "sources": [
+    {
+      "name": "TDTChannels",
+      "url": "https://www.tdtchannels.com/lists/tv.m3u8"
+    },
+    {
+      "name": "IPTV-org España",
+      "url": "https://iptv-org.github.io/iptv/countries/es.m3u"
+    },
+    {
+      "name": "Free-TV España",
+      "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_spain.m3u8"
+    },
+    {
+      "name": "Teleonline",
+      "url": "https://raw.githubusercontent.com/teleonline/listas/main/tv.m3u8"
+    }
+  ],
+  "requested_channels": 62,
+  "available_channels": 39,
   "missing_channels": [
     "Antena 3",
     "Cuatro",
@@ -19,20 +36,866 @@
     "Atreseries",
     "Boing",
     "DKISS",
-    "Ten"
+    "Ten",
+    "GOL Play",
+    "Telemadrid",
+    "Aragón TV",
+    "IB3",
+    "TPA",
+    "La 7 Murcia",
+    "La 7 Castilla y León"
   ],
   "sources_per_channel": {
     "La 1": 2,
-    "La 2": 2,
+    "La 2": 3,
     "24h": 3,
-    "Teledeporte": 2,
-    "Clan": 3,
-    "TRECE": 1,
+    "Teledeporte": 3,
+    "Clan": 4,
+    "TRECE": 3,
+    "Squirrel": 1,
+    "BOM Cine": 1,
+    "Euronews": 1,
+    "El Toro TV": 2,
+    "Negocios TV": 2,
+    "El País": 1,
+    "RNE para todos": 2,
     "Real Madrid TV": 2,
+    "La Otra": 1,
+    "Canal Sur Andalucía": 4,
+    "Canal Sur 2": 2,
+    "Canal Sur Más Noticias": 2,
+    "TV3": 1,
+    "TV3 CAT": 4,
+    "3CatInfo": 6,
+    "33": 4,
+    "SX3": 4,
+    "Esport3": 3,
+    "À Punt": 1,
+    "ETB 1": 2,
+    "ETB 2": 2,
+    "Castilla-La Mancha Media": 2,
+    "Canal Extremadura": 1,
+    "TV Canaria": 2,
     "TVG": 1,
     "TVG 2": 1,
     "Telemiño": 1,
-    "TeleVigo": 1
+    "TeleVigo": 2,
+    "betevé": 2,
+    "Bon Dia TV": 2,
+    "La 8 Mediterráneo": 1,
+    "Distrito TV": 2,
+    "Sol Música": 1
   },
-  "total_stream_sources": 19
+  "total_stream_sources": 84,
+  "source_results": [
+    {
+      "name": "TDTChannels",
+      "url": "https://www.tdtchannels.com/lists/tv.m3u8",
+      "status": "ok",
+      "entries": 574
+    },
+    {
+      "name": "IPTV-org España",
+      "url": "https://iptv-org.github.io/iptv/countries/es.m3u",
+      "status": "ok",
+      "entries": 336
+    },
+    {
+      "name": "Free-TV España",
+      "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_spain.m3u8",
+      "status": "ok",
+      "entries": 51
+    },
+    {
+      "name": "Teleonline",
+      "url": "https://raw.githubusercontent.com/teleonline/listas/main/tv.m3u8",
+      "status": "ok",
+      "entries": 575
+    }
+  ],
+  "validation": {
+    "mode": "hls_manifest_and_segment",
+    "candidate_streams": 111,
+    "passed": 84,
+    "failed": 27,
+    "checks": [
+      {
+        "channel": "La 1",
+        "source": "TDTChannels",
+        "url": "https://rtvelivestream.rtve.es/rtvesec/la1/la1_main_dvr.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "La 1",
+        "source": "TDTChannels",
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15619&avod=1&coppa=0&td=6&is_lat=[LMT]&dnt=[DNS]&us_privacy=[US_PRIVACY]&did=[DEVICE_ID]&ip=[IP]&ua=[UA]&ifa_type=[IFA_TYPE]&app_bundle=[APP_BUNDLE]",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "La 1",
+        "source": "IPTV-org España",
+        "url": "https://7nyaler.streamhostingcdn.top/stream/40/index.m3u8",
+        "status": "failed",
+        "reason": "HTTP Error 403: Forbidden"
+      },
+      {
+        "channel": "La 1",
+        "source": "IPTV-org España",
+        "url": "http://185.47.212.25:8080/tdp_HD/index.m3u8",
+        "status": "failed",
+        "reason": "HTTP Error 403: Forbidden"
+      },
+      {
+        "channel": "La 2",
+        "source": "TDTChannels",
+        "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "La 2",
+        "source": "TDTChannels",
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15618",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "La 2",
+        "source": "IPTV-org España",
+        "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Antena 3",
+        "source": "Free-TV España",
+        "url": "http://177.10.184.193:8000/play/a06a/index.m3u8",
+        "status": "failed",
+        "reason": "<urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>"
+      },
+      {
+        "channel": "Cuatro",
+        "source": "Free-TV España",
+        "url": "https://livehlsdai-i.akamaihd.net/hls/live/571643/cuatro/bitrate_1.m3u8",
+        "status": "failed",
+        "reason": "HTTP Error 400: Bad Request"
+      },
+      {
+        "channel": "Telecinco",
+        "source": "Free-TV España",
+        "url": "https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_1.m3u8",
+        "status": "failed",
+        "reason": "HTTP Error 400: Bad Request"
+      },
+      {
+        "channel": "laSexta",
+        "source": "Free-TV España",
+        "url": "http://a3live-lh.akamaihd.net/i/lasexta_1@35272/master.m3u8",
+        "status": "failed",
+        "reason": "HTTP Error 400: Bad Request"
+      },
+      {
+        "channel": "24h",
+        "source": "TDTChannels",
+        "url": "https://ztnr.rtve.es/ztnr/1694255.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "24h",
+        "source": "TDTChannels",
+        "url": "https://rtvelivestream.rtve.es/rtvesec/24h/24h_main_dvr.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "24h",
+        "source": "TDTChannels",
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15621",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Teledeporte",
+        "source": "TDTChannels",
+        "url": "https://rtvelivestream.rtve.es/rtvesec/tdp/tdp_main.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Teledeporte",
+        "source": "TDTChannels",
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15601&avod=1&coppa=0&td=6&is_lat=[LMT]&dnt=[DNS]&us_privacy=[US_PRIVACY]&did=[DEVICE_ID]&ip=[IP]&ua=[UA]&ifa_type=[IFA_TYPE]&app_bundle=[APP_BUNDLE]",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Teledeporte",
+        "source": "IPTV-org España",
+        "url": "https://rtve01p.origin.c21livecloud.com/live-origin/tdp-hls/bitrate_1.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Teledeporte",
+        "source": "Teleonline",
+        "url": "https://ztnr.rtve.es/ztnr/1712295.m3u8",
+        "status": "failed",
+        "reason": "Cifrado DRM/no compatible con la lista VLC"
+      },
+      {
+        "channel": "Clan",
+        "source": "TDTChannels",
+        "url": "https://ztnr.rtve.es/ztnr/5466990.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Clan",
+        "source": "TDTChannels",
+        "url": "https://rtvelivestream.rtve.es/rtvesec/clan/clan_main_dvr.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Clan",
+        "source": "TDTChannels",
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15620",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Clan",
+        "source": "IPTV-org España",
+        "url": "https://lge-lgla2.otteravision.com/lge/lgcla/lgcla.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "FDF",
+        "source": "Free-TV España",
+        "url": "https://mdslivehls-i.akamaihd.net/hls/live/571650/fdf/bitrate_1.m3u8",
+        "status": "failed",
+        "reason": "HTTP Error 400: Bad Request"
+      },
+      {
+        "channel": "Energy",
+        "source": "Free-TV España",
+        "url": "https://directos.energytv.es/orilinear03/live/linear03/main/main.isml/main-audio_spa=128000-video=1500000.m3u8",
+        "status": "failed",
+        "reason": "HTTP Error 403: Forbidden"
+      },
+      {
+        "channel": "Divinity",
+        "source": "Free-TV España",
+        "url": "https://directos.divinity.es/orilinear04/live/linear04/main/main.isml/main-audio_spa=128000-video=1500000.m3u8",
+        "status": "failed",
+        "reason": "HTTP Error 403: Forbidden"
+      },
+      {
+        "channel": "Be Mad",
+        "source": "Free-TV España",
+        "url": "https://directos.bemad.es/orilinear02/live/linear02/main/main.isml/main-audio_spa=128000-video=1500000.m3u8",
+        "status": "failed",
+        "reason": "HTTP Error 403: Forbidden"
+      },
+      {
+        "channel": "TRECE",
+        "source": "TDTChannels",
+        "url": "https://play.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/021/playlist.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "TRECE",
+        "source": "IPTV-org España",
+        "url": "https://play.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/live.smil/playlist.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "TRECE",
+        "source": "Teleonline",
+        "url": "https://live-edge-eu-1.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/liveld/index.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Neox",
+        "source": "Free-TV España",
+        "url": "http://a3live-lh.akamaihd.net/i/nxhds/geoneox_1@35261/master.m3u8",
+        "status": "failed",
+        "reason": "HTTP Error 400: Bad Request"
+      },
+      {
+        "channel": "Nova",
+        "source": "Free-TV España",
+        "url": "http://40.160.24.55/Nova/index.m3u8",
+        "status": "failed",
+        "reason": "HTTP Error 404: Not Found"
+      },
+      {
+        "channel": "Mega",
+        "source": "Free-TV España",
+        "url": "http://a3live-lh.akamaihd.net/i/mghds/geomega_1@328914/master.m3u8",
+        "status": "failed",
+        "reason": "HTTP Error 400: Bad Request"
+      },
+      {
+        "channel": "Atreseries",
+        "source": "Free-TV España",
+        "url": "http://181.78.109.48:8000/play/a00l/index.m3u8",
+        "status": "failed",
+        "reason": "<urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>"
+      },
+      {
+        "channel": "Boing",
+        "source": "Free-TV España",
+        "url": "https://mdslivehls-i.akamaihd.net/hls/live/571647/boing/bitrate_1.m3u8",
+        "status": "failed",
+        "reason": "HTTP Error 400: Bad Request"
+      },
+      {
+        "channel": "Squirrel",
+        "source": "Free-TV España",
+        "url": "https://tsw.streamingwebtv24.it:1936/inteccdn1/inteccdn1/playlist.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "BOM Cine",
+        "source": "Free-TV España",
+        "url": "https://tsw.streamingwebtv24.it:1936/inteccdn3/inteccdn3/playlist.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Euronews",
+        "source": "TDTChannels",
+        "url": "https://euronews-live-spa-es.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6571/bitok/eyJzdGlkIjoiMDA0YjY0NTMtYjY2MC00ZTZkLTlkNzEtMTk3YTM3ZDZhZWIxIiwibWt0IjoiZXMiLCJjaCI6NjU3MSwicHRmIjoxfQ==/26034/euronews-es.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "El Toro TV",
+        "source": "TDTChannels",
+        "url": "https://streaming-1.eltorotv.com/lb0/eltorotv-streaming-web/index.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "El Toro TV",
+        "source": "TDTChannels",
+        "url": "https://edge-nodo-002.streaming.hitcloser.net/eltorotv-streaming-web/index.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Negocios TV",
+        "source": "TDTChannels",
+        "url": "https://negociostv-negociostv-samsunges.amagi.tv/hls/amagi_hls_data_negociost-negociostv-samsunges/CDN/playlist.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Negocios TV",
+        "source": "IPTV-org España",
+        "url": "https://streaming013.gestec-video.com/hls/negociostv.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "El País",
+        "source": "TDTChannels",
+        "url": "https://d2epgk1fomaa1g.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-9n8y4tw0bk3an/live/fast-channel-el-pais/fast-channel-el-pais.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "RNE para todos",
+        "source": "TDTChannels",
+        "url": "https://ztnr.rtve.es/ztnr/6688753.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "RNE para todos",
+        "source": "TDTChannels",
+        "url": "https://rtvelivestream.rtve.es/rtvesec/rne/rne_para_todos_main.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Real Madrid TV",
+        "source": "TDTChannels",
+        "url": "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Real Madrid TV",
+        "source": "TDTChannels",
+        "url": "https://rmtv.akamaized.net/hls/live/2043154/rmtv-en-web/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Telemadrid",
+        "source": "IPTV-org España",
+        "url": "https://live.telemadrid.cross-media.es/6389770581112/eu-central-1/6416060453001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiajI5YjgyLmVncmVzcy5haGc3NmwiLCJhY2NvdW50X2lkIjoiNjQxNjA2MDQ1MzAwMSIsImVobiI6ImxpdmUudGVsZW1hZHJpZC5jcm9zcy1tZWRpYS5lcyIsImlzcyI6ImJsaXZlLXBsYXliYWNrLXNvdXJjZS1hcGkiLCJzdWIiOiJwYXRobWFwdG9rZW4iLCJhdWQiOlsiNjQxNjA2MDQ1MzAwMSJdLCJqdGkiOiI2Mzg5NzcwNTgxMTEyIn0.kqriAMUkHT6m0V6wkCHJum_EUyL4PAi1zJMKlfmYHEU/playlist-hls.m3u8",
+        "status": "failed",
+        "reason": "La respuesta no es un manifiesto HLS"
+      },
+      {
+        "channel": "Telemadrid",
+        "source": "Free-TV España",
+        "url": "https://telemadrid-23-secure2.akamaized.net/master.m3u8",
+        "status": "failed",
+        "reason": "HTTP Error 400: Bad Request"
+      },
+      {
+        "channel": "La Otra",
+        "source": "Free-TV España",
+        "url": "https://laotra-1-23-secure2.akamaized.net/master.m3u8",
+        "status": "failed",
+        "reason": "HTTP Error 400: Bad Request"
+      },
+      {
+        "channel": "La Otra",
+        "source": "Teleonline",
+        "url": "https://live.telemadrid.cross-media.es/6389770474112/eu-central-1/6416060453001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiajI5YjgyLmVncmVzcy5haGc3NmwiLCJhY2NvdW50X2lkIjoiNjQxNjA2MDQ1MzAwMSIsImVobiI6ImxpdmUudGVsZW1hZHJpZC5jcm9zcy1tZWRpYS5lcyIsImlzcyI6ImJsaXZlLXBsYXliYWNrLXNvdXJjZS1hcGkiLCJzdWIiOiJwYXRobWFwdG9rZW4iLCJhdWQiOlsiNjQxNjA2MDQ1MzAwMSJdLCJqdGkiOiI2Mzg5NzcwNDc0MTEyIn0.1KSxZK60xNAZZsa7dbYR8Equ8aG930d6qFDsYKUmmdE/playlist-hls.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Canal Sur Andalucía",
+        "source": "TDTChannels",
+        "url": "https://live-24-canalsur.interactvty.pro/9bb0f4edcb8946e79f5017ddca6c02b0/74cdbd1b401a7598ab8f3e9b5652c9909daa60dd4f6f96f28396a3f1cfd926f2.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Canal Sur Andalucía",
+        "source": "TDTChannels",
+        "url": "https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Canal Sur Andalucía",
+        "source": "Free-TV España",
+        "url": "https://d4oe4cnrgi9c9.cloudfront.net/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Canal Sur Andalucía",
+        "source": "Teleonline",
+        "url": "https://cdnlive.codev8.net/rtvalive/smil:channel22.smil/playlist.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Canal Sur 2",
+        "source": "TDTChannels",
+        "url": "https://rtva-channel22.flumotion.cloud/playlist.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Canal Sur 2",
+        "source": "IPTV-org España",
+        "url": "https://cdnlive.codev8.net/rtvalive/smil:channel22.smil/playlist.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Canal Sur Más Noticias",
+        "source": "TDTChannels",
+        "url": "https://rtva-channel42.flumotion.cloud/playlist.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Canal Sur Más Noticias",
+        "source": "IPTV-org España",
+        "url": "https://cdnlive.codev8.net/rtvalive/smil:channel42.smil/playlist.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "TV3",
+        "source": "TDTChannels",
+        "url": "https://directes3-tv-cat.3catdirectes.cat/live-content/tv3-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "TV3 CAT",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-es.3catdirectes.cat/live-content/tvc-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "TV3 CAT",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-es.3catdirectes.cat/live-origin/tvc-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "TV3 CAT",
+        "source": "TDTChannels",
+        "url": "https://directes3-tv-int.3catdirectes.cat/live-content/tvi-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "TV3 CAT",
+        "source": "IPTV-org España",
+        "url": "https://directes3-tv-es.3catdirectes.cat/live-content/tvc-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "3CatInfo",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-cat.3catdirectes.cat/live-content/canal324-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "3CatInfo",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-cat.3catdirectes.cat/live-origin/canal324-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "3CatInfo",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-es.3catdirectes.cat/live-content/canal324-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "3CatInfo",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-es.3catdirectes.cat/live-origin/canal324-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "3CatInfo",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-int.3catdirectes.cat/live-content/canal324-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "3CatInfo",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-int.3catdirectes.cat/live-origin/canal324-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "33",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-cat.3catdirectes.cat/live-content/c33-super3-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "33",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-cat.3catdirectes.cat/live-origin/c33-super3-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "33",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-es.3catdirectes.cat/live-content/c33-super3-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "33",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-es.3catdirectes.cat/live-origin/c33-super3-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "SX3",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-cat.3catdirectes.cat/live-content/super3-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "SX3",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-cat.3catdirectes.cat/live-origin/super3-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "SX3",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-es.3catdirectes.cat/live-content/super3-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "SX3",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-es.3catdirectes.cat/live-origin/super3-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Esport3",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-cat.3catdirectes.cat/live-origin/esport3-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Esport3",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-es.3catdirectes.cat/live-origin/esport3-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Esport3",
+        "source": "IPTV-org España",
+        "url": "https://directes-tv-cat.3catdirectes.cat/live-content/esport3-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "À Punt",
+        "source": "TDTChannels",
+        "url": "https://fastly.live.brightcove.com/1846756479408303045/eu-central-1/6057955885001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiZWFxNWh4LmVncmVzcy53YzQ3bTEiLCJhY2NvdW50X2lkIjoiNjA1Nzk1NTg4NTAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2MDU3OTU1ODg1MDAxIl0sImp0aSI6IjE4NDY3NTY0Nzk0MDgzMDMwNDUifQ.o6wb_VA-TVxl3ERgr7FKLlaTjY7smErmsf73QAydySE/playlist-hls-dvr.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "À Punt",
+        "source": "Free-TV España",
+        "url": "https://bcovlive-a.akamaihd.net/8499d938ef904e39b58a4adec2ddeada/eu-west-1/6057955885001/playlist_dvr.m3u8",
+        "status": "failed",
+        "reason": "HTTP Error 503: Service Unavailable"
+      },
+      {
+        "channel": "Aragón TV",
+        "source": "Free-TV España",
+        "url": "https://cartv.streaming.aranova.es/hls/live/aragontv_canal1.m3u8",
+        "status": "failed",
+        "reason": "<urlopen error [Errno 11001] getaddrinfo failed>"
+      },
+      {
+        "channel": "ETB 1",
+        "source": "TDTChannels",
+        "url": "https://cdn1.etbon.eus/etb1/index.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "ETB 1",
+        "source": "Free-TV España",
+        "url": "https://multimedia.eitb.eus/live-content/etb1hd-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "ETB 2",
+        "source": "TDTChannels",
+        "url": "https://cdn1.etbon.eus/etb2/index.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "ETB 2",
+        "source": "Free-TV España",
+        "url": "https://multimedia.eitb.eus/live-content/etb2hd-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Castilla-La Mancha Media",
+        "source": "TDTChannels",
+        "url": "https://cdnapisec.kaltura.com/p/2288691/sp/228869100/playManifest/entryId/1_gnz6ity9/protocol/https/format/applehttp/a.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Castilla-La Mancha Media",
+        "source": "IPTV-org España",
+        "url": "https://cdnapisec.kaltura.com/p/2288691/sp/228869100/playManifest/entryId/1_gnz6ity9/protocol/https/format/applehttp/flavorIds/1_a9gxgxzy,1_v71ryg4b,1_vbfvtjw6,1_obo1bqsx,1_3shk3s5d/a.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Canal Extremadura",
+        "source": "TDTChannels",
+        "url": "https://d2ymuyhevki1a1.cloudfront.net/wct-ddd2992e-86fc-4611-a491-7f392259e9ba/continuous/9be76611-d2cd-474d-bf19-ef702ba31b02/index.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Canal Extremadura",
+        "source": "IPTV-org España",
+        "url": "https://cdnlive.codev8.net/canalextremaduralive/smil:channel1DVR.smil/playlist.m3u8?DVR=",
+        "status": "failed",
+        "reason": "HTTP Error 404: Not Found"
+      },
+      {
+        "channel": "Canal Extremadura",
+        "source": "Teleonline",
+        "url": "https://canalextremadura-live.flumotion.cloud/canalextremadura/live_all/playlist_dvr.m3u8",
+        "status": "failed",
+        "reason": "<urlopen error [Errno 11001] getaddrinfo failed>"
+      },
+      {
+        "channel": "TV Canaria",
+        "source": "TDTChannels",
+        "url": "https://d1oyt3v08gcy18.cloudfront.net/index-events.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "TV Canaria",
+        "source": "TDTChannels",
+        "url": "https://rtvclive.flumotion.cloud/rtvc1live/smil:channel1PRG.smil/playlist.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "TV Canaria",
+        "source": "Teleonline",
+        "url": "https://cdnapi.codev8.net/apicloud/v1.0/public/iframe/8d417032-64cb-4f1e-9042-c97e05501eed",
+        "status": "failed",
+        "reason": "La respuesta no es un manifiesto HLS"
+      },
+      {
+        "channel": "IB3",
+        "source": "Free-TV España",
+        "url": "https://www.youtube.com/c/ib3/live",
+        "status": "failed",
+        "reason": "La respuesta no es un manifiesto HLS"
+      },
+      {
+        "channel": "La 7 Murcia",
+        "source": "Free-TV España",
+        "url": "https://rtv-murcia-live.globalmest.com/principal/smil:principal.smil/playlist.m3u8",
+        "status": "failed",
+        "reason": "HTTP Error 403: Not Authorized jwt:anonymous (no valid jwt payload)  token source: header"
+      },
+      {
+        "channel": "La 7 Castilla y León",
+        "source": "Free-TV España",
+        "url": "http://nws.nice264.com/ilive/cyl/cyl_cyltvlivem_MB_348/playlist.m3u8",
+        "status": "failed",
+        "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+      },
+      {
+        "channel": "TVG",
+        "source": "TDTChannels",
+        "url": "https://crtvg-europa.flumotion.cloud/playlist.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "TVG 2",
+        "source": "TDTChannels",
+        "url": "https://crtvg-tvg2.flumotion.cloud/playlist.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Telemiño",
+        "source": "TDTChannels",
+        "url": "https://laregionlive.flumotion.cloud/laregionlive/smil:channel1.smil/playlist.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "TeleVigo",
+        "source": "TDTChannels",
+        "url": "https://stream-us-east-1.getpublica.com/playlist.m3u8?cb=[CACHEBUSTER]&network_id=16113&live=1&avod=0&hls_marker=1&position=preroll&pod_duration=120&app_bundle=com.streamingconnect.viva&app_domain=mirametv.live&app_category=linear_tv&ssai_enabled=1&content_cat=IAB1&content_channel=televigo&content_genre=tv_broadcaster&content_network=streamingconnect&content_rating=TV-G&us_privacy=[US_PRIVACY]&gdpr=[GDPR]&ifa_type=[IFA_TYPE]&min_ad_duration=6&max_ad_duration=120&content_id=[CONTENT_ID]",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "TeleVigo",
+        "source": "IPTV-org España",
+        "url": "https://cloud.fastchannel.es/mic/manifiest/hls/televigo/televigo.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "betevé",
+        "source": "TDTChannels",
+        "url": "https://cdnapisec.kaltura.com/p/2346171/sp/234617100/playManifest/entryId/1_vfibi2fe/protocol/https/format/applehttp/a.m3u8?referrer=aHR0cHM6Ly9iZXRldmUuY2F0",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "betevé",
+        "source": "Teleonline",
+        "url": "https://cdnapisec.kaltura.com/p/2346171/sp/234617100/playManifest/entryId/1_vfibi2fe/format/applehttp/protocol/https/uiConfId/42816492/a.m3u8?referrer=aHR0cHM6Ly9iZXRldmUuY2F0",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Bon Dia TV",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-cat.3catdirectes.cat/live-content/bondia-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Bon Dia TV",
+        "source": "TDTChannels",
+        "url": "https://directes-tv-int.3catdirectes.cat/live-content/bondia-hls/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "La 8 Mediterráneo",
+        "source": "TDTChannels",
+        "url": "https://newscript.gestec-video.com/hls/8TVEVENTOS.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Distrito TV",
+        "source": "TDTChannels",
+        "url": "https://live.emitstream.com/hls/3mn7wpcv7hbmxmdzaxap/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Distrito TV",
+        "source": "IPTV-org España",
+        "url": "https://nlb2-live.emitstream.com/hls/3mn7wpcv7hbmxmdzaxap/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Sol Música",
+        "source": "TDTChannels",
+        "url": "https://d2glyu450vvghm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-21u4g5cjglv02/sm.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      }
+    ]
+  }
 }

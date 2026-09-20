@@ -23,6 +23,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-24.04
+    timeout-minutes: 15
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v5
@@ -35,7 +36,7 @@ jobs:
       - name: Comprobar generador y publicación
         run: python -m unittest discover -s tests -v
 
-      - name: Generar lista reducida
+      - name: Combinar listas y comprobar streams
         run: python scripts/build_playlist.py
 
       - name: Guardar cambios
