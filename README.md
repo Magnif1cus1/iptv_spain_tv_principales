@@ -11,8 +11,9 @@ con un filtro de **62 canales nacionales, autonómicos y locales** y varias fuen
 - Elimina URLs repetidas entre listas y conserva las opciones de reproducción de VLC.
 - Si un canal tiene varias fuentes, aparecen como `Canal — Fuente 1`, `Canal — Fuente 2`, etc.
 - Comprueba cada enlace HLS: manifiesto, variante, inicialización si existe y parte de un fragmento multimedia. Reintenta los fallos una vez y descarta HTML, enlaces caídos y DRM no compatible.
-- Publica solo los enlaces que superan esa comprobación; `estado.md` y `estado.json` detallan canales ausentes, procedencia y errores.
-- Si una lista falla, continúa con las demás. Si ninguna funciona o ningún canal supera la comprobación, termina con error y conserva la publicación anterior.
+- Publica los enlaces que superan esa comprobación y conserva los que declaran explícitamente un bloqueo geográfico, marcados como tales. Un `403 Forbidden` genérico sigue descartándose.
+- `estado.md` y `estado.json` distinguen fuentes comprobadas, fuentes conservadas por geobloqueo, canales ausentes, procedencia y errores.
+- Si una lista falla, continúa con las demás. Si no quedan fuentes comprobadas ni fuentes con geobloqueo explícito, termina con error y conserva la publicación anterior.
 - GitHub Actions vuelve a generar la lista todos los días y también al cambiar la configuración.
 - No necesitas servidor, PC encendido, Docker ni Threadfin.
 
@@ -100,6 +101,9 @@ automáticamente si una lista ofrece un enlace que supere la comprobación.
 La comprobación verifica acceso a datos multimedia, **no una reproducción completa
 en VLC**. Un enlace puede caducar o estar limitado geográficamente: GitHub Actions
 comprueba desde su servidor, cuya ubicación puede ser diferente a la tuya.
+Los enlaces que devuelven un `403` con motivo `Geoblock` o `geofence` se conservan
+con la etiqueta `[restricción geográfica]` en VLC. No se cuentan como comprobados;
+pueden funcionar desde España. Las fuentes comprobadas aparecen primero.
 
 ## Añadir listas de origen
 

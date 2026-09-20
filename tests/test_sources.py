@@ -118,6 +118,29 @@ class ProbeTests(unittest.TestCase):
         self.assertEqual(len(accepted), 1)
         self.assertEqual(reports[0]["status"], "ok")
 
+    def test_explicit_geoblock_is_distinct_from_generic_forbidden(self):
+        for reason, expected in [("Geoblock", "geo_restricted"), ("geofence:blocked", "geo_restricted"),
+                                 ("Forbidden", "failed"), ("Not Authorized jwt", "failed")]:
+            with self.subTest(reason=reason), patch.object(mod, "fetch_bytes", side_effect=HTTPError(
+                "https://example.invalid/master.m3u8", 403, reason, {}, None,
+            )):
+                self.assertEqual(mod.probe_hls(entry())["status"], expected)
+
+    def test_geo_stream_is_kept_and_labeled_after_verified_alternative(self):
+        restricted = entry("TV3", "https://example.invalid/geo.m3u8")
+        verified = entry("TV3", "https://example.invalid/ok.m3u8")
+        with patch.object(mod, "probe_hls", side_effect=[
+            {"status": "geo_restricted", "reason": "HTTP 403: Geoblock"}, {"status": "ok"},
+        ]) as probe:
+            accepted, reports = mod.validate_entries({"TV3": [restricted, verified]}, workers=1)
+        self.assertEqual(len(accepted), 2)
+        self.assertEqual(probe.call_count, 2)
+        self.assertEqual([r["status"] for r in reports], ["geo_restricted", "ok"])
+        playlist, status = mod.build({"channels": [{"name": "TV3"}]}, accepted)
+        self.assertLess(playlist.index(verified.url), playlist.index(restricted.url))
+        self.assertIn("TV3 — Fuente 2 [restricción geográfica]", playlist)
+        self.assertEqual(status["available_channels"], 1)
+
 
 if __name__ == "__main__":
     unittest.main()

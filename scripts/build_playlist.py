@@ -38,6 +38,7 @@ class Entry:
     url: str
     source_name: str
     origin: str = ""
+    validation_status: str = ""
 
 
 def normalize(value: str) -> str:
@@ -165,9 +166,14 @@ def probe_hls(entry: Entry, timeout: int = 10) -> dict:
             return {"status": "ok", "check": "hls_manifest_and_segment"}
         raise ValueError("Demasiados manifiestos anidados")
     except (OSError, ValueError) as exc:
+        geo_restricted = (
+            isinstance(exc, urllib.error.HTTPError)
+            and exc.code == 403
+            and any(marker in str(exc.reason).lower() for marker in ("geoblock", "geo-block", "geofence"))
+        )
         if isinstance(exc, urllib.error.HTTPError):
             exc.close()
-        return {"status": "failed", "reason": str(exc)}
+        return {"status": "geo_restricted" if geo_restricted else "failed", "reason": str(exc)}
 
 
 def validate_entries(grouped: dict[str, list[Entry]], workers: int = 8, timeout: int = 10):
@@ -175,14 +181,15 @@ def validate_entries(grouped: dict[str, list[Entry]], workers: int = 8, timeout:
     def check(candidate):
         name, entry = candidate
         result = probe_hls(entry, timeout)
-        if result["status"] != "ok":
+        if result["status"] == "failed":
             result = probe_hls(entry, timeout)
         return name, entry, result
     accepted, reports = [], []
     with ThreadPoolExecutor(max_workers=workers) as pool:
         for name, entry, result in pool.map(check, candidates):
             reports.append({"channel": name, "source": entry.origin, "url": entry.url, **result})
-            if result["status"] == "ok":
+            if result["status"] in ("ok", "geo_restricted"):
+                entry.validation_status = result["status"]
                 accepted.append(entry)
     return accepted, reports
 
@@ -299,7 +306,8 @@ def build(config: dict, entries: Iterable[Entry]) -> tuple[str, dict]:
     total_sources = 0
 
     for canonical in canonical_order:
-        channel_entries = grouped[canonical]
+        # Presentar primero las fuentes comprobadas desde el servidor.
+        channel_entries = sorted(grouped[canonical], key=lambda entry: entry.validation_status == "geo_restricted")
         if not channel_entries:
             missing.append(canonical)
             continue
@@ -309,6 +317,8 @@ def build(config: dict, entries: Iterable[Entry]) -> tuple[str, dict]:
         total_sources += count
         for index, entry in enumerate(channel_entries, start=1):
             display_name = canonical if count == 1 else f"{canonical} — Fuente {index}"
+            if entry.validation_status == "geo_restricted":
+                display_name += " [restricción geográfica]"
             extinf = set_attr(entry.extinf, "group-title", group_title)
             # Mantener tvg-name canónico ayuda a conservar EPG/identidad aunque el nombre visible tenga Fuente N.
             extinf = set_attr(extinf, "tvg-name", canonical)
@@ -348,7 +358,7 @@ def write_status_md(path: Path, status: dict) -> None:
     else:
         lines.append("- Ninguna")
 
-    lines += ["", "## Canales sin fuente HLS comprobada", ""]
+    lines += ["", "## Canales sin fuente publicada", ""]
     if status["missing_channels"]:
         lines += [f"- {name}" for name in status["missing_channels"]]
     else:
@@ -356,6 +366,7 @@ def write_status_md(path: Path, status: dict) -> None:
     lines += [
         "",
         "> La comprobación descarga el manifiesto HLS y parte de un fragmento multimedia. No prueba la decodificación en VLC ni garantiza disponibilidad futura o desde otro país.",
+        "> Se conservan los enlaces cuyo servidor declara explícitamente un bloqueo geográfico. Aparecen marcados en VLC y no se cuentan como comprobados: pueden funcionar desde España aunque GitHub no pueda verificarlos.",
         "> Un canal ausente puede requerir web/app oficial, DRM o una sesión, o tener sus enlaces caídos. No se sustituye por su versión internacional.",
         "",
     ]
@@ -366,11 +377,13 @@ def write_status_md(path: Path, status: dict) -> None:
     validation = status.get("validation", {})
     lines += ["", "## Comprobación de enlaces", "",
               f"- Modo: {validation.get('mode', 'no ejecutada')}",
-              f"- Aceptados: {validation.get('passed', 0)}",
+              f"- Comprobados (manifiesto y fragmento): {validation.get('passed', 0)}",
+              f"- Conservados por restricción geográfica, sin comprobar: {validation.get('geo_restricted', 0)}",
               f"- Descartados: {validation.get('failed', 0)}", ""]
     for check in validation.get("checks", []):
         if check["status"] != "ok":
-            lines.append(f"- {check['channel']} ({check['source']}): {check['reason']}")
+            disposition = "Conservado por geobloqueo" if check["status"] == "geo_restricted" else "Descartado"
+            lines.append(f"- {check['channel']} ({check['source']}): {disposition} — {check['reason']}")
     lines.append("")
     path.write_text("\n".join(lines), encoding="utf-8")
 
@@ -418,7 +431,8 @@ def main() -> int:
         "mode": "skipped" if args.skip_validation else "hls_manifest_and_segment",
         "candidate_streams": candidate_count,
         "passed": sum(check["status"] == "ok" for check in checks),
-        "failed": sum(check["status"] != "ok" for check in checks),
+        "geo_restricted": sum(check["status"] == "geo_restricted" for check in checks),
+        "failed": sum(check["status"] == "failed" for check in checks),
         "checks": checks,
     }
     Path(args.output).write_text(playlist, encoding="utf-8", newline="\n")
