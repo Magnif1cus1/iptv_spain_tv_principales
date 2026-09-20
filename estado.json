@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-20T22:24:41+00:00",
+  "generated_at_utc": "2026-09-20T22:33:45+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -19,7 +19,7 @@
     }
   ],
   "requested_channels": 62,
-  "available_channels": 35,
+  "available_channels": 37,
   "missing_channels": [
     "Antena 3",
     "Cuatro",
@@ -37,12 +37,10 @@
     "Boing",
     "DKISS",
     "Ten",
+    "Squirrel",
+    "BOM Cine",
     "GOL Play",
     "Euronews",
-    "TV3",
-    "33",
-    "SX3",
-    "Esport3",
     "Aragón TV",
     "IB3",
     "TPA",
@@ -50,14 +48,12 @@
     "La 7 Castilla y León"
   ],
   "sources_per_channel": {
-    "La 1": 1,
-    "La 2": 1,
+    "La 1": 2,
+    "La 2": 3,
     "24h": 3,
-    "Teledeporte": 2,
-    "Clan": 2,
+    "Teledeporte": 3,
+    "Clan": 4,
     "TRECE": 3,
-    "Squirrel": 1,
-    "BOM Cine": 1,
     "El Toro TV": 2,
     "Negocios TV": 2,
     "El País": 1,
@@ -68,8 +64,12 @@
     "Canal Sur Andalucía": 4,
     "Canal Sur 2": 2,
     "Canal Sur Más Noticias": 2,
-    "TV3 CAT": 1,
-    "3CatInfo": 2,
+    "TV3": 1,
+    "TV3 CAT": 4,
+    "3CatInfo": 6,
+    "33": 4,
+    "SX3": 4,
+    "Esport3": 3,
     "À Punt": 1,
     "ETB 1": 1,
     "ETB 2": 1,
@@ -81,12 +81,12 @@
     "Telemiño": 1,
     "TeleVigo": 2,
     "betevé": 2,
-    "Bon Dia TV": 1,
+    "Bon Dia TV": 2,
     "La 8 Mediterráneo": 1,
     "Distrito TV": 2,
     "Sol Música": 1
   },
-  "total_stream_sources": 56,
+  "total_stream_sources": 80,
   "source_results": [
     {
       "name": "TDTChannels",
@@ -116,14 +116,15 @@
   "validation": {
     "mode": "hls_manifest_and_segment",
     "candidate_streams": 111,
-    "passed": 56,
-    "failed": 55,
+    "passed": 54,
+    "geo_restricted": 26,
+    "failed": 31,
     "checks": [
       {
         "channel": "La 1",
         "source": "TDTChannels",
         "url": "https://rtvelivestream.rtve.es/rtvesec/la1/la1_main_dvr.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: Geoblock"
       },
       {
@@ -151,7 +152,7 @@
         "channel": "La 2",
         "source": "TDTChannels",
         "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: Geoblock"
       },
       {
@@ -165,7 +166,7 @@
         "channel": "La 2",
         "source": "IPTV-org España",
         "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: Geoblock"
       },
       {
@@ -221,7 +222,7 @@
         "channel": "Teledeporte",
         "source": "TDTChannels",
         "url": "https://rtvelivestream.rtve.es/rtvesec/tdp/tdp_main.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: Geoblock"
       },
       {
@@ -249,14 +250,14 @@
         "channel": "Clan",
         "source": "TDTChannels",
         "url": "https://ztnr.rtve.es/ztnr/5466990.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: Geoblock"
       },
       {
         "channel": "Clan",
         "source": "TDTChannels",
         "url": "https://rtvelivestream.rtve.es/rtvesec/clan/clan_main_dvr.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: Geoblock"
       },
       {
@@ -361,15 +362,15 @@
         "channel": "Squirrel",
         "source": "Free-TV España",
         "url": "https://tsw.streamingwebtv24.it:1936/inteccdn1/inteccdn1/playlist.m3u8",
-        "status": "ok",
-        "check": "hls_manifest_and_segment"
+        "status": "failed",
+        "reason": "HTTP Error 403: Forbidden"
       },
       {
         "channel": "BOM Cine",
         "source": "Free-TV España",
         "url": "https://tsw.streamingwebtv24.it:1936/inteccdn3/inteccdn3/playlist.m3u8",
-        "status": "ok",
-        "check": "hls_manifest_and_segment"
+        "status": "failed",
+        "reason": "HTTP Error 403: Forbidden"
       },
       {
         "channel": "Euronews",
@@ -529,21 +530,21 @@
         "channel": "TV3",
         "source": "TDTChannels",
         "url": "https://directes3-tv-cat.3catdirectes.cat/live-content/tv3-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
         "channel": "TV3 CAT",
         "source": "TDTChannels",
         "url": "https://directes-tv-es.3catdirectes.cat/live-content/tvc-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
         "channel": "TV3 CAT",
         "source": "TDTChannels",
         "url": "https://directes-tv-es.3catdirectes.cat/live-origin/tvc-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
@@ -557,35 +558,35 @@
         "channel": "TV3 CAT",
         "source": "IPTV-org España",
         "url": "https://directes3-tv-es.3catdirectes.cat/live-content/tvc-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
         "channel": "3CatInfo",
         "source": "TDTChannels",
         "url": "https://directes-tv-cat.3catdirectes.cat/live-content/canal324-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
         "channel": "3CatInfo",
         "source": "TDTChannels",
         "url": "https://directes-tv-cat.3catdirectes.cat/live-origin/canal324-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
         "channel": "3CatInfo",
         "source": "TDTChannels",
         "url": "https://directes-tv-es.3catdirectes.cat/live-content/canal324-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
         "channel": "3CatInfo",
         "source": "TDTChannels",
         "url": "https://directes-tv-es.3catdirectes.cat/live-origin/canal324-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
@@ -606,77 +607,77 @@
         "channel": "33",
         "source": "TDTChannels",
         "url": "https://directes-tv-cat.3catdirectes.cat/live-content/c33-super3-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
         "channel": "33",
         "source": "TDTChannels",
         "url": "https://directes-tv-cat.3catdirectes.cat/live-origin/c33-super3-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
         "channel": "33",
         "source": "TDTChannels",
         "url": "https://directes-tv-es.3catdirectes.cat/live-content/c33-super3-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
         "channel": "33",
         "source": "TDTChannels",
         "url": "https://directes-tv-es.3catdirectes.cat/live-origin/c33-super3-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
         "channel": "SX3",
         "source": "TDTChannels",
         "url": "https://directes-tv-cat.3catdirectes.cat/live-content/super3-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
         "channel": "SX3",
         "source": "TDTChannels",
         "url": "https://directes-tv-cat.3catdirectes.cat/live-origin/super3-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
         "channel": "SX3",
         "source": "TDTChannels",
         "url": "https://directes-tv-es.3catdirectes.cat/live-content/super3-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
         "channel": "SX3",
         "source": "TDTChannels",
         "url": "https://directes-tv-es.3catdirectes.cat/live-origin/super3-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
         "channel": "Esport3",
         "source": "TDTChannels",
         "url": "https://directes-tv-cat.3catdirectes.cat/live-origin/esport3-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
         "channel": "Esport3",
         "source": "TDTChannels",
         "url": "https://directes-tv-es.3catdirectes.cat/live-origin/esport3-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
         "channel": "Esport3",
         "source": "IPTV-org España",
         "url": "https://directes-tv-cat.3catdirectes.cat/live-content/esport3-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
@@ -858,7 +859,7 @@
         "channel": "Bon Dia TV",
         "source": "TDTChannels",
         "url": "https://directes-tv-cat.3catdirectes.cat/live-content/bondia-hls/master.m3u8",
-        "status": "failed",
+        "status": "geo_restricted",
         "reason": "HTTP Error 403: geofence:blocked"
       },
       {
