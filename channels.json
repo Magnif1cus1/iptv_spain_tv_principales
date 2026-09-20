@@ -1,0 +1,32 @@
+{
+  "group_title": "Favoritos España",
+  "channels": [
+    {"name": "La 1"},
+    {"name": "La 2"},
+    {"name": "Antena 3"},
+    {"name": "Cuatro"},
+    {"name": "Telecinco"},
+    {"name": "laSexta", "aliases": ["La Sexta"]},
+    {"name": "24h", "aliases": ["24 Horas"]},
+    {"name": "Teledeporte"},
+    {"name": "Clan"},
+    {"name": "FDF"},
+    {"name": "Energy"},
+    {"name": "Divinity"},
+    {"name": "Be Mad", "aliases": ["Bemad"]},
+    {"name": "DMAX", "aliases": ["DMax"]},
+    {"name": "TRECE", "aliases": ["Trece", "13 TV"]},
+    {"name": "Neox"},
+    {"name": "Nova"},
+    {"name": "Mega"},
+    {"name": "Atreseries"},
+    {"name": "Boing"},
+    {"name": "DKISS", "aliases": ["Dkiss"]},
+    {"name": "Ten", "aliases": ["TEN"]},
+    {"name": "Real Madrid TV"},
+    {"name": "TVG"},
+    {"name": "TVG 2", "aliases": ["TVG2"]},
+    {"name": "Telemiño", "aliases": ["Telemino"]},
+    {"name": "TeleVigo", "aliases": ["Televigo"]}
+  ]
+}

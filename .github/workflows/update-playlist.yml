@@ -1,0 +1,47 @@
+name: Actualizar lista TDT
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Todos los días. GitHub Actions usa UTC.
+    - cron: "17 4 * * *"
+  push:
+    branches: ["main"]
+    paths:
+      - "channels.json"
+      - "scripts/build_playlist.py"
+      - ".github/workflows/update-playlist.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-tdt-playlist
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Generar lista reducida
+        run: python scripts/build_playlist.py
+
+      - name: Guardar cambios
+        run: |
+          if git diff --quiet -- tv_principales.m3u8 estado.md estado.json; then
+            echo "No hay cambios en la lista."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tv_principales.m3u8 estado.md estado.json
+          git commit -m "Actualizar lista TDT automáticamente"
+          git push

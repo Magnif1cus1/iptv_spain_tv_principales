@@ -1,0 +1,9 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="La1.TV" tvg-name="La 1" group-title="Generalistas",La 1
+https://example.invalid/la1-a.m3u8
+#EXTINF:-1 tvg-id="La1.TV" tvg-name="La 1" group-title="Generalistas",La 1
+https://example.invalid/la1-b.m3u8
+#EXTINF:-1 tvg-id="24Horas.TV" tvg-name="24h" group-title="Informativos",24h
+https://example.invalid/24h.m3u8
+#EXTINF:-1 tvg-id="Other.TV" tvg-name="Otro canal" group-title="Otros",Otro canal
+https://example.invalid/other.m3u8
