@@ -10,6 +10,7 @@ on:
     paths:
       - "channels.json"
       - "scripts/build_playlist.py"
+      - "tests/**"
       - ".github/workflows/update-playlist.yml"
 
 permissions:
@@ -21,27 +22,31 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Descargar repositorio
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Configurar Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.13"
+
+      - name: Comprobar generador y publicación
+        run: python -m unittest discover -s tests -v
 
       - name: Generar lista reducida
         run: python scripts/build_playlist.py
 
       - name: Guardar cambios
         run: |
-          if git diff --quiet -- tv_principales.m3u8 estado.md estado.json; then
+          # Añadir primero: git diff no detecta archivos nuevos sin seguimiento.
+          git add tv_principales.m3u8 estado.md estado.json
+          if git diff --cached --quiet -- tv_principales.m3u8 estado.md estado.json; then
             echo "No hay cambios en la lista."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add tv_principales.m3u8 estado.md estado.json
           git commit -m "Actualizar lista TDT automáticamente"
           git push

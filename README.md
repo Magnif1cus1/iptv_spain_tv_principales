@@ -42,6 +42,18 @@ En VLC:
 
 Para ver la lista: **Ctrl+L**.
 
+### Si la URL devuelve 404 tras una ejecución correcta
+
+Comprueba que `tv_principales.m3u8` aparece en la rama `main`. Una versión anterior
+del workflow comprobaba `git diff` antes de `git add`: en la primera ejecución
+los archivos eran nuevos y Git no los detectaba como cambios, por lo que no se
+publicaban aunque Actions terminase en verde. El workflow corregido añade los
+archivos antes de comprobar `git diff --cached`.
+
+Sube la corrección de `.github/workflows/update-playlist.yml` a `main`; se ejecutará
+automáticamente. También puedes usar **Actions > Actualizar lista TDT > Run workflow**.
+Los avisos sobre Node.js y `ubuntu-latest` no eran la causa del 404.
+
 ## Cambiar los canales
 
 Edita `channels.json`. El orden de ese archivo es también el orden de la lista generada.
