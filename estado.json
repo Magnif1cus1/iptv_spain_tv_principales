@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-21T09:58:43+00:00",
+  "generated_at_utc": "2026-09-22T09:19:48+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -98,7 +98,7 @@
       "name": "IPTV-org España",
       "url": "https://iptv-org.github.io/iptv/countries/es.m3u",
       "status": "ok",
-      "entries": 336
+      "entries": 337
     },
     {
       "name": "Free-TV España",
@@ -116,8 +116,8 @@
   "validation": {
     "mode": "hls_manifest_and_segment",
     "candidate_streams": 111,
-    "passed": 54,
-    "geo_restricted": 26,
+    "passed": 56,
+    "geo_restricted": 24,
     "failed": 31,
     "checks": [
       {
@@ -152,8 +152,8 @@
         "channel": "La 2",
         "source": "TDTChannels",
         "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8",
-        "status": "geo_restricted",
-        "reason": "HTTP Error 403: Geoblock"
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
       },
       {
         "channel": "La 2",
@@ -166,8 +166,8 @@
         "channel": "La 2",
         "source": "IPTV-org España",
         "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main.m3u8",
-        "status": "geo_restricted",
-        "reason": "HTTP Error 403: Geoblock"
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
       },
       {
         "channel": "Antena 3",
@@ -804,7 +804,7 @@
         "source": "Free-TV España",
         "url": "http://nws.nice264.com/ilive/cyl/cyl_cyltvlivem_MB_348/playlist.m3u8",
         "status": "failed",
-        "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+        "reason": "HTTP Error 404: Not Found"
       },
       {
         "channel": "TVG",

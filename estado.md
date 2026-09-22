@@ -1,6 +1,6 @@
 # Estado de la lista
 
-Actualizado: `2026-09-21T09:58:43+00:00`
+Actualizado: `2026-09-22T09:19:48+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **37**
@@ -81,22 +81,20 @@ Actualizado: `2026-09-21T09:58:43+00:00`
 ## Listas consultadas
 
 - TDTChannels: ok — 574 entradas
-- IPTV-org España: ok — 336 entradas
+- IPTV-org España: ok — 337 entradas
 - Free-TV España: ok — 51 entradas
 - Teleonline: ok — 575 entradas
 
 ## Comprobación de enlaces
 
 - Modo: hls_manifest_and_segment
-- Comprobados (manifiesto y fragmento): 54
-- Conservados por restricción geográfica, sin comprobar: 26
+- Comprobados (manifiesto y fragmento): 56
+- Conservados por restricción geográfica, sin comprobar: 24
 - Descartados: 31
 
 - La 1 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - La 1 (IPTV-org España): Descartado — HTTP Error 403: Forbidden
 - La 1 (IPTV-org España): Descartado — HTTP Error 403: Forbidden
-- La 2 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
-- La 2 (IPTV-org España): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - Antena 3 (Free-TV España): Descartado — <urlopen error [Errno 111] Connection refused>
 - Cuatro (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - Telecinco (Free-TV España): Descartado — HTTP Error 400: Bad Request
@@ -147,5 +145,5 @@ Actualizado: `2026-09-21T09:58:43+00:00`
 - TV Canaria (Teleonline): Descartado — La respuesta no es un manifiesto HLS
 - IB3 (Free-TV España): Descartado — La respuesta no es un manifiesto HLS
 - La 7 Murcia (Free-TV España): Descartado — HTTP Error 403: Not Authorized jwt:anonymous (no valid jwt payload)  token source: header
-- La 7 Castilla y León (Free-TV España): Descartado — <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>
+- La 7 Castilla y León (Free-TV España): Descartado — HTTP Error 404: Not Found
 - Bon Dia TV (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
