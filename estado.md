@@ -1,6 +1,6 @@
 # Estado de la lista
 
-Actualizado: `2026-09-23T09:20:33+00:00`
+Actualizado: `2026-09-24T09:20:24+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **37**
