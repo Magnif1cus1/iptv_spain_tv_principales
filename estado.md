@@ -1,6 +1,6 @@
 # Estado de la lista
 
-Actualizado: `2026-09-25T09:38:11+00:00`
+Actualizado: `2026-09-26T09:22:43+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **37**
@@ -112,8 +112,8 @@ Actualizado: `2026-09-25T09:38:11+00:00`
 - Mega (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - Atreseries (Free-TV España): Descartado — <urlopen error [Errno 111] Connection refused>
 - Boing (Free-TV España): Descartado — HTTP Error 400: Bad Request
-- Squirrel (Free-TV España): Descartado — HTTP Error 403: Forbidden
-- BOM Cine (Free-TV España): Descartado — HTTP Error 403: Forbidden
+- Squirrel (Free-TV España): Descartado — HTTP Error 404: Not Found
+- BOM Cine (Free-TV España): Descartado — HTTP Error 404: Not Found
 - Euronews (TDTChannels): Descartado — HTTP Error 403: Restricted Content
 - Telemadrid (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - La Otra (Free-TV España): Descartado — HTTP Error 400: Bad Request

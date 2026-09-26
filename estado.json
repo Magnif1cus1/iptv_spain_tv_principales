@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-25T09:38:11+00:00",
+  "generated_at_utc": "2026-09-26T09:22:43+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -363,14 +363,14 @@
         "source": "Free-TV España",
         "url": "https://tsw.streamingwebtv24.it:1936/inteccdn1/inteccdn1/playlist.m3u8",
         "status": "failed",
-        "reason": "HTTP Error 403: Forbidden"
+        "reason": "HTTP Error 404: Not Found"
       },
       {
         "channel": "BOM Cine",
         "source": "Free-TV España",
         "url": "https://tsw.streamingwebtv24.it:1936/inteccdn3/inteccdn3/playlist.m3u8",
         "status": "failed",
-        "reason": "HTTP Error 403: Forbidden"
+        "reason": "HTTP Error 404: Not Found"
       },
       {
         "channel": "Euronews",
