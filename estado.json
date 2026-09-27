@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-26T09:22:43+00:00",
+  "generated_at_utc": "2026-09-27T10:02:09+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -92,13 +92,13 @@
       "name": "TDTChannels",
       "url": "https://www.tdtchannels.com/lists/tv.m3u8",
       "status": "ok",
-      "entries": 574
+      "entries": 576
     },
     {
       "name": "IPTV-org España",
       "url": "https://iptv-org.github.io/iptv/countries/es.m3u",
       "status": "ok",
-      "entries": 321
+      "entries": 324
     },
     {
       "name": "Free-TV España",
@@ -115,10 +115,10 @@
   ],
   "validation": {
     "mode": "hls_manifest_and_segment",
-    "candidate_streams": 111,
-    "passed": 56,
-    "geo_restricted": 24,
-    "failed": 31,
+    "candidate_streams": 112,
+    "passed": 54,
+    "geo_restricted": 26,
+    "failed": 32,
     "checks": [
       {
         "channel": "La 1",
@@ -137,9 +137,9 @@
       {
         "channel": "La 1",
         "source": "IPTV-org España",
-        "url": "https://7nyaler.streamhostingcdn.top/stream/40/index.m3u8",
+        "url": "https://cdn.stmify.com/zapitv/stream/LA_1/la1_4k.mpd",
         "status": "failed",
-        "reason": "HTTP Error 403: Forbidden"
+        "reason": "La respuesta no es un manifiesto HLS"
       },
       {
         "channel": "La 1",
@@ -152,8 +152,8 @@
         "channel": "La 2",
         "source": "TDTChannels",
         "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8",
-        "status": "ok",
-        "check": "hls_manifest_and_segment"
+        "status": "geo_restricted",
+        "reason": "HTTP Error 403: Geoblock"
       },
       {
         "channel": "La 2",
@@ -166,8 +166,8 @@
         "channel": "La 2",
         "source": "IPTV-org España",
         "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main.m3u8",
-        "status": "ok",
-        "check": "hls_manifest_and_segment"
+        "status": "geo_restricted",
+        "reason": "HTTP Error 403: Geoblock"
       },
       {
         "channel": "Antena 3",
@@ -363,14 +363,14 @@
         "source": "Free-TV España",
         "url": "https://tsw.streamingwebtv24.it:1936/inteccdn1/inteccdn1/playlist.m3u8",
         "status": "failed",
-        "reason": "HTTP Error 404: Not Found"
+        "reason": "HTTP Error 403: Forbidden"
       },
       {
         "channel": "BOM Cine",
         "source": "Free-TV España",
         "url": "https://tsw.streamingwebtv24.it:1936/inteccdn3/inteccdn3/playlist.m3u8",
         "status": "failed",
-        "reason": "HTTP Error 404: Not Found"
+        "reason": "HTTP Error 403: Forbidden"
       },
       {
         "channel": "Euronews",
@@ -483,6 +483,13 @@
         "url": "https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8",
         "status": "ok",
         "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Canal Sur Andalucía",
+        "source": "IPTV-org España",
+        "url": "https://cdn.stmify.com/zapitv/stream/CANAL_SUR/canal_sur_hd.mpd",
+        "status": "failed",
+        "reason": "La respuesta no es un manifiesto HLS"
       },
       {
         "channel": "Canal Sur Andalucía",

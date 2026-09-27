@@ -1,6 +1,6 @@
 # Estado de la lista
 
-Actualizado: `2026-09-26T09:22:43+00:00`
+Actualizado: `2026-09-27T10:02:09+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **37**
@@ -80,21 +80,23 @@ Actualizado: `2026-09-26T09:22:43+00:00`
 
 ## Listas consultadas
 
-- TDTChannels: ok — 574 entradas
-- IPTV-org España: ok — 321 entradas
+- TDTChannels: ok — 576 entradas
+- IPTV-org España: ok — 324 entradas
 - Free-TV España: ok — 51 entradas
 - Teleonline: ok — 575 entradas
 
 ## Comprobación de enlaces
 
 - Modo: hls_manifest_and_segment
-- Comprobados (manifiesto y fragmento): 56
-- Conservados por restricción geográfica, sin comprobar: 24
-- Descartados: 31
+- Comprobados (manifiesto y fragmento): 54
+- Conservados por restricción geográfica, sin comprobar: 26
+- Descartados: 32
 
 - La 1 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
+- La 1 (IPTV-org España): Descartado — La respuesta no es un manifiesto HLS
 - La 1 (IPTV-org España): Descartado — HTTP Error 403: Forbidden
-- La 1 (IPTV-org España): Descartado — HTTP Error 403: Forbidden
+- La 2 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
+- La 2 (IPTV-org España): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - Antena 3 (Free-TV España): Descartado — <urlopen error [Errno 111] Connection refused>
 - Cuatro (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - Telecinco (Free-TV España): Descartado — HTTP Error 400: Bad Request
@@ -112,11 +114,12 @@ Actualizado: `2026-09-26T09:22:43+00:00`
 - Mega (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - Atreseries (Free-TV España): Descartado — <urlopen error [Errno 111] Connection refused>
 - Boing (Free-TV España): Descartado — HTTP Error 400: Bad Request
-- Squirrel (Free-TV España): Descartado — HTTP Error 404: Not Found
-- BOM Cine (Free-TV España): Descartado — HTTP Error 404: Not Found
+- Squirrel (Free-TV España): Descartado — HTTP Error 403: Forbidden
+- BOM Cine (Free-TV España): Descartado — HTTP Error 403: Forbidden
 - Euronews (TDTChannels): Descartado — HTTP Error 403: Restricted Content
 - Telemadrid (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - La Otra (Free-TV España): Descartado — HTTP Error 400: Bad Request
+- Canal Sur Andalucía (IPTV-org España): Descartado — La respuesta no es un manifiesto HLS
 - TV3 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
 - TV3 CAT (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
 - TV3 CAT (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
