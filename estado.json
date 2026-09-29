@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-28T10:57:42+00:00",
+  "generated_at_utc": "2026-09-29T10:43:15+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -110,7 +110,7 @@
       "name": "Teleonline",
       "url": "https://raw.githubusercontent.com/teleonline/listas/main/tv.m3u8",
       "status": "ok",
-      "entries": 575
+      "entries": 576
     }
   ],
   "validation": {
