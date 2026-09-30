@@ -1,6 +1,6 @@
 # Estado de la lista
 
-Actualizado: `2026-09-29T10:43:15+00:00`
+Actualizado: `2026-09-30T10:31:22+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **37**
@@ -93,7 +93,7 @@ Actualizado: `2026-09-29T10:43:15+00:00`
 - Descartados: 32
 
 - La 1 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
-- La 1 (IPTV-org España): Descartado — La respuesta no es un manifiesto HLS
+- La 1 (IPTV-org España): Descartado — HTTP Error 521: <none>
 - La 1 (IPTV-org España): Descartado — HTTP Error 403: Forbidden
 - La 2 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - La 2 (IPTV-org España): Conservado por geobloqueo — HTTP Error 403: Geoblock
@@ -119,7 +119,7 @@ Actualizado: `2026-09-29T10:43:15+00:00`
 - Euronews (TDTChannels): Descartado — HTTP Error 403: Restricted Content
 - Telemadrid (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - La Otra (Free-TV España): Descartado — HTTP Error 400: Bad Request
-- Canal Sur Andalucía (IPTV-org España): Descartado — La respuesta no es un manifiesto HLS
+- Canal Sur Andalucía (IPTV-org España): Descartado — HTTP Error 521: <none>
 - TV3 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
 - TV3 CAT (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
 - TV3 CAT (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
