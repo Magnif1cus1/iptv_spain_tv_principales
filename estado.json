@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-01T10:59:31+00:00",
+  "generated_at_utc": "2026-10-02T10:32:48+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -98,7 +98,7 @@
       "name": "IPTV-org España",
       "url": "https://iptv-org.github.io/iptv/countries/es.m3u",
       "status": "ok",
-      "entries": 323
+      "entries": 327
     },
     {
       "name": "Free-TV España",
@@ -115,10 +115,10 @@
   ],
   "validation": {
     "mode": "hls_manifest_and_segment",
-    "candidate_streams": 112,
+    "candidate_streams": 113,
     "passed": 54,
     "geo_restricted": 26,
-    "failed": 32,
+    "failed": 33,
     "checks": [
       {
         "channel": "La 1",
@@ -139,7 +139,7 @@
         "source": "IPTV-org España",
         "url": "https://cdn.stmify.com/zapitv/stream/LA_1/la1_4k.mpd",
         "status": "failed",
-        "reason": "The read operation timed out"
+        "reason": "La respuesta no es un manifiesto HLS"
       },
       {
         "channel": "La 1",
@@ -168,6 +168,13 @@
         "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main.m3u8",
         "status": "geo_restricted",
         "reason": "HTTP Error 403: Geoblock"
+      },
+      {
+        "channel": "Antena 3",
+        "source": "IPTV-org España",
+        "url": "https://cdn.stmify.com/zapitv/stream/ANTENA_3/test.mpd",
+        "status": "failed",
+        "reason": "La respuesta no es un manifiesto HLS"
       },
       {
         "channel": "Antena 3",
@@ -489,7 +496,7 @@
         "source": "IPTV-org España",
         "url": "https://cdn.stmify.com/zapitv/stream/CANAL_SUR/canal_sur_hd.mpd",
         "status": "failed",
-        "reason": "The read operation timed out"
+        "reason": "La respuesta no es un manifiesto HLS"
       },
       {
         "channel": "Canal Sur Andalucía",
