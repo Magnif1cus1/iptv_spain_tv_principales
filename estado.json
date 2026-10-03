@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-02T10:32:48+00:00",
+  "generated_at_utc": "2026-10-03T09:54:04+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -116,8 +116,8 @@
   "validation": {
     "mode": "hls_manifest_and_segment",
     "candidate_streams": 113,
-    "passed": 54,
-    "geo_restricted": 26,
+    "passed": 56,
+    "geo_restricted": 24,
     "failed": 33,
     "checks": [
       {
@@ -152,8 +152,8 @@
         "channel": "La 2",
         "source": "TDTChannels",
         "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8",
-        "status": "geo_restricted",
-        "reason": "HTTP Error 403: Geoblock"
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
       },
       {
         "channel": "La 2",
@@ -166,8 +166,8 @@
         "channel": "La 2",
         "source": "IPTV-org España",
         "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main.m3u8",
-        "status": "geo_restricted",
-        "reason": "HTTP Error 403: Geoblock"
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
       },
       {
         "channel": "Antena 3",
