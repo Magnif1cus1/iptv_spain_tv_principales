@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-03T09:54:04+00:00",
+  "generated_at_utc": "2026-10-04T10:36:23+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -116,8 +116,8 @@
   "validation": {
     "mode": "hls_manifest_and_segment",
     "candidate_streams": 113,
-    "passed": 56,
-    "geo_restricted": 24,
+    "passed": 54,
+    "geo_restricted": 26,
     "failed": 33,
     "checks": [
       {
@@ -139,7 +139,7 @@
         "source": "IPTV-org España",
         "url": "https://cdn.stmify.com/zapitv/stream/LA_1/la1_4k.mpd",
         "status": "failed",
-        "reason": "La respuesta no es un manifiesto HLS"
+        "reason": "HTTP Error 403: Forbidden"
       },
       {
         "channel": "La 1",
@@ -152,8 +152,8 @@
         "channel": "La 2",
         "source": "TDTChannels",
         "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8",
-        "status": "ok",
-        "check": "hls_manifest_and_segment"
+        "status": "geo_restricted",
+        "reason": "HTTP Error 403: Geoblock"
       },
       {
         "channel": "La 2",
@@ -166,15 +166,15 @@
         "channel": "La 2",
         "source": "IPTV-org España",
         "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main.m3u8",
-        "status": "ok",
-        "check": "hls_manifest_and_segment"
+        "status": "geo_restricted",
+        "reason": "HTTP Error 403: Geoblock"
       },
       {
         "channel": "Antena 3",
         "source": "IPTV-org España",
         "url": "https://cdn.stmify.com/zapitv/stream/ANTENA_3/test.mpd",
         "status": "failed",
-        "reason": "La respuesta no es un manifiesto HLS"
+        "reason": "HTTP Error 403: Forbidden"
       },
       {
         "channel": "Antena 3",
@@ -496,7 +496,7 @@
         "source": "IPTV-org España",
         "url": "https://cdn.stmify.com/zapitv/stream/CANAL_SUR/canal_sur_hd.mpd",
         "status": "failed",
-        "reason": "La respuesta no es un manifiesto HLS"
+        "reason": "HTTP Error 403: Forbidden"
       },
       {
         "channel": "Canal Sur Andalucía",
