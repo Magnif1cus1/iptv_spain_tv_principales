@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-04T10:36:23+00:00",
+  "generated_at_utc": "2026-10-05T11:32:37+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -139,7 +139,7 @@
         "source": "IPTV-org España",
         "url": "https://cdn.stmify.com/zapitv/stream/LA_1/la1_4k.mpd",
         "status": "failed",
-        "reason": "HTTP Error 403: Forbidden"
+        "reason": "HTTP Error 404: Not Found"
       },
       {
         "channel": "La 1",
@@ -174,7 +174,7 @@
         "source": "IPTV-org España",
         "url": "https://cdn.stmify.com/zapitv/stream/ANTENA_3/test.mpd",
         "status": "failed",
-        "reason": "HTTP Error 403: Forbidden"
+        "reason": "HTTP Error 404: Not Found"
       },
       {
         "channel": "Antena 3",
@@ -496,7 +496,7 @@
         "source": "IPTV-org España",
         "url": "https://cdn.stmify.com/zapitv/stream/CANAL_SUR/canal_sur_hd.mpd",
         "status": "failed",
-        "reason": "HTTP Error 403: Forbidden"
+        "reason": "HTTP Error 404: Not Found"
       },
       {
         "channel": "Canal Sur Andalucía",
