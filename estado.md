@@ -1,6 +1,6 @@
 # Estado de la lista
 
-Actualizado: `2026-10-07T11:06:44+00:00`
+Actualizado: `2026-10-08T11:23:59+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **37**
@@ -103,7 +103,7 @@ Actualizado: `2026-10-07T11:06:44+00:00`
 - Telecinco (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - laSexta (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - Teledeporte (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
-- Teledeporte (Teleonline): Descartado — Cifrado DRM/no compatible con la lista VLC
+- Teledeporte (Teleonline): Descartado — HTTP Error 500: Internal Server Error
 - Clan (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - Clan (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - FDF (Free-TV España): Descartado — HTTP Error 400: Bad Request
