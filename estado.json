@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-08T11:23:59+00:00",
+  "generated_at_utc": "2026-10-09T11:21:24+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -53,7 +53,7 @@
     "24h": 3,
     "Teledeporte": 3,
     "Clan": 4,
-    "TRECE": 2,
+    "TRECE": 3,
     "El Toro TV": 2,
     "Negocios TV": 2,
     "El País": 1,
@@ -86,7 +86,7 @@
     "Distrito TV": 2,
     "Sol Música": 1
   },
-  "total_stream_sources": 79,
+  "total_stream_sources": 80,
   "source_results": [
     {
       "name": "TDTChannels",
@@ -116,9 +116,9 @@
   "validation": {
     "mode": "hls_manifest_and_segment",
     "candidate_streams": 113,
-    "passed": 53,
+    "passed": 54,
     "geo_restricted": 26,
-    "failed": 34,
+    "failed": 33,
     "checks": [
       {
         "channel": "La 1",
@@ -251,7 +251,7 @@
         "source": "Teleonline",
         "url": "https://ztnr.rtve.es/ztnr/1712295.m3u8",
         "status": "failed",
-        "reason": "HTTP Error 500: Internal Server Error"
+        "reason": "Cifrado DRM/no compatible con la lista VLC"
       },
       {
         "channel": "Clan",
@@ -320,8 +320,8 @@
         "channel": "TRECE",
         "source": "IPTV-org España",
         "url": "https://play.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/live.smil/playlist.m3u8",
-        "status": "failed",
-        "reason": "HTTP Error 401: Unauthorized"
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
       },
       {
         "channel": "TRECE",
