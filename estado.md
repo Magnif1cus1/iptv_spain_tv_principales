@@ -1,10 +1,10 @@
 # Estado de la lista
 
-Actualizado: `2026-10-09T11:21:24+00:00`
+Actualizado: `2026-10-10T10:38:32+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **37**
-- Fuentes totales incluidas: **80**
+- Fuentes totales incluidas: **79**
 
 ## Fuentes encontradas
 
@@ -13,7 +13,7 @@ Actualizado: `2026-10-09T11:21:24+00:00`
 - 24h: 3
 - Teledeporte: 3
 - Clan: 4
-- TRECE: 3
+- TRECE: 2
 - El Toro TV: 2
 - Negocios TV: 2
 - El País: 1
@@ -88,15 +88,13 @@ Actualizado: `2026-10-09T11:21:24+00:00`
 ## Comprobación de enlaces
 
 - Modo: hls_manifest_and_segment
-- Comprobados (manifiesto y fragmento): 54
-- Conservados por restricción geográfica, sin comprobar: 26
-- Descartados: 33
+- Comprobados (manifiesto y fragmento): 55
+- Conservados por restricción geográfica, sin comprobar: 24
+- Descartados: 34
 
 - La 1 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - La 1 (IPTV-org España): Descartado — HTTP Error 404: Not Found
 - La 1 (IPTV-org España): Descartado — HTTP Error 403: Forbidden
-- La 2 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
-- La 2 (IPTV-org España): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - Antena 3 (IPTV-org España): Descartado — HTTP Error 404: Not Found
 - Antena 3 (Free-TV España): Descartado — <urlopen error [Errno 111] Connection refused>
 - Cuatro (Free-TV España): Descartado — HTTP Error 400: Bad Request
@@ -110,6 +108,7 @@ Actualizado: `2026-10-09T11:21:24+00:00`
 - Energy (Free-TV España): Descartado — HTTP Error 403: Forbidden
 - Divinity (Free-TV España): Descartado — HTTP Error 403: Forbidden
 - Be Mad (Free-TV España): Descartado — HTTP Error 403: Forbidden
+- TRECE (IPTV-org España): Descartado — HTTP Error 401: Unauthorized
 - Neox (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - Nova (Free-TV España): Descartado — HTTP Error 404: Not Found
 - Mega (Free-TV España): Descartado — HTTP Error 400: Bad Request
