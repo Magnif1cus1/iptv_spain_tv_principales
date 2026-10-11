@@ -1,6 +1,6 @@
 # Estado de la lista
 
-Actualizado: `2026-10-10T10:38:32+00:00`
+Actualizado: `2026-10-11T10:51:33+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **37**
@@ -81,21 +81,23 @@ Actualizado: `2026-10-10T10:38:32+00:00`
 ## Listas consultadas
 
 - TDTChannels: ok — 576 entradas
-- IPTV-org España: ok — 327 entradas
+- IPTV-org España: ok — 325 entradas
 - Free-TV España: ok — 51 entradas
 - Teleonline: ok — 576 entradas
 
 ## Comprobación de enlaces
 
 - Modo: hls_manifest_and_segment
-- Comprobados (manifiesto y fragmento): 55
-- Conservados por restricción geográfica, sin comprobar: 24
+- Comprobados (manifiesto y fragmento): 53
+- Conservados por restricción geográfica, sin comprobar: 26
 - Descartados: 34
 
 - La 1 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
-- La 1 (IPTV-org España): Descartado — HTTP Error 404: Not Found
+- La 1 (IPTV-org España): Descartado — <urlopen error [Errno 101] Network is unreachable>
 - La 1 (IPTV-org España): Descartado — HTTP Error 403: Forbidden
-- Antena 3 (IPTV-org España): Descartado — HTTP Error 404: Not Found
+- La 2 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
+- La 2 (IPTV-org España): Conservado por geobloqueo — HTTP Error 403: Geoblock
+- Antena 3 (IPTV-org España): Descartado — <urlopen error [Errno 101] Network is unreachable>
 - Antena 3 (Free-TV España): Descartado — <urlopen error [Errno 111] Connection refused>
 - Cuatro (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - Telecinco (Free-TV España): Descartado — HTTP Error 400: Bad Request
@@ -119,7 +121,7 @@ Actualizado: `2026-10-10T10:38:32+00:00`
 - Euronews (TDTChannels): Descartado — HTTP Error 403: Restricted Content
 - Telemadrid (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - La Otra (Free-TV España): Descartado — HTTP Error 400: Bad Request
-- Canal Sur Andalucía (IPTV-org España): Descartado — HTTP Error 404: Not Found
+- Canal Sur Andalucía (IPTV-org España): Descartado — <urlopen error [Errno 101] Network is unreachable>
 - TV3 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
 - TV3 CAT (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
 - TV3 CAT (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
