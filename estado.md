@@ -1,6 +1,6 @@
 # Estado de la lista
 
-Actualizado: `2026-10-13T11:51:09+00:00`
+Actualizado: `2026-10-14T09:33:09+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **37**
@@ -88,15 +88,13 @@ Actualizado: `2026-10-13T11:51:09+00:00`
 ## Comprobación de enlaces
 
 - Modo: hls_manifest_and_segment
-- Comprobados (manifiesto y fragmento): 53
-- Conservados por restricción geográfica, sin comprobar: 26
+- Comprobados (manifiesto y fragmento): 55
+- Conservados por restricción geográfica, sin comprobar: 24
 - Descartados: 34
 
 - La 1 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - La 1 (IPTV-org España): Descartado — HTTP Error 404: Not Found
 - La 1 (IPTV-org España): Descartado — HTTP Error 403: Forbidden
-- La 2 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
-- La 2 (IPTV-org España): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - Antena 3 (IPTV-org España): Descartado — HTTP Error 404: Not Found
 - Antena 3 (Free-TV España): Descartado — <urlopen error [Errno 111] Connection refused>
 - Cuatro (Free-TV España): Descartado — HTTP Error 400: Bad Request
