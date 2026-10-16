@@ -53,10 +53,7 @@ https://rtvelivestream.rtve.es/rtvesec/clan/clan_main_dvr.m3u8
 #EXTINF:-1 tvg-id="13.TV" tvg-logo="https://graph.facebook.com/TRECEtves/picture?width=200&height=200" group-title="Favoritos España" tvg-name="TRECE",TRECE — Fuente 1
 https://play.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/021/playlist.m3u8
 
-#EXTINF:-1 tvg-name="TRECE" tvg-id="Trece.es@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Trece.svg/960px-Trece.svg.png" group-title="Favoritos España",TRECE — Fuente 2
-https://play.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/live.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TRECE.es" tvg-name="TRECE" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TRECE.png" group-title="Favoritos España",TRECE — Fuente 3
+#EXTINF:-1 tvg-id="TRECE.es" tvg-name="TRECE" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TRECE.png" group-title="Favoritos España",TRECE — Fuente 2
 https://live-edge-eu-1.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/liveld/index.m3u8
 
 #EXTINF:-1 tvg-id="ElToroTV.TV" tvg-logo="https://graph.facebook.com/eltorotv.es/picture?width=200&height=200" group-title="Favoritos España" tvg-name="El Toro TV",El Toro TV — Fuente 1

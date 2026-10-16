@@ -1,10 +1,10 @@
 # Estado de la lista
 
-Actualizado: `2026-10-15T09:11:17+00:00`
+Actualizado: `2026-10-16T09:03:28+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **37**
-- Fuentes totales incluidas: **80**
+- Fuentes totales incluidas: **79**
 
 ## Fuentes encontradas
 
@@ -13,7 +13,7 @@ Actualizado: `2026-10-15T09:11:17+00:00`
 - 24h: 3
 - Teledeporte: 3
 - Clan: 4
-- TRECE: 3
+- TRECE: 2
 - El Toro TV: 2
 - Negocios TV: 2
 - El País: 1
@@ -88,9 +88,9 @@ Actualizado: `2026-10-15T09:11:17+00:00`
 ## Comprobación de enlaces
 
 - Modo: hls_manifest_and_segment
-- Comprobados (manifiesto y fragmento): 56
+- Comprobados (manifiesto y fragmento): 55
 - Conservados por restricción geográfica, sin comprobar: 24
-- Descartados: 33
+- Descartados: 34
 
 - La 1 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - La 1 (IPTV-org España): Descartado — HTTP Error 404: Not Found
@@ -108,6 +108,7 @@ Actualizado: `2026-10-15T09:11:17+00:00`
 - Energy (Free-TV España): Descartado — HTTP Error 403: Forbidden
 - Divinity (Free-TV España): Descartado — HTTP Error 403: Forbidden
 - Be Mad (Free-TV España): Descartado — HTTP Error 403: Forbidden
+- TRECE (IPTV-org España): Descartado — HTTP Error 401: Unauthorized
 - Neox (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - Nova (Free-TV España): Descartado — HTTP Error 404: Not Found
 - Mega (Free-TV España): Descartado — HTTP Error 400: Bad Request
