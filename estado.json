@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-19T09:57:22+00:00",
+  "generated_at_utc": "2026-10-20T09:28:06+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -92,13 +92,13 @@
       "name": "TDTChannels",
       "url": "https://www.tdtchannels.com/lists/tv.m3u8",
       "status": "ok",
-      "entries": 576
+      "entries": 573
     },
     {
       "name": "IPTV-org España",
       "url": "https://iptv-org.github.io/iptv/countries/es.m3u",
       "status": "ok",
-      "entries": 324
+      "entries": 330
     },
     {
       "name": "Free-TV España",
@@ -706,7 +706,7 @@
         "source": "Free-TV España",
         "url": "https://bcovlive-a.akamaihd.net/8499d938ef904e39b58a4adec2ddeada/eu-west-1/6057955885001/playlist_dvr.m3u8",
         "status": "failed",
-        "reason": "HTTP Error 503: Service Unavailable"
+        "reason": "HTTP Error 400: Bad Request"
       },
       {
         "channel": "Aragón TV",
