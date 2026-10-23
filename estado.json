@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-22T09:26:37+00:00",
+  "generated_at_utc": "2026-10-23T09:22:53+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -98,7 +98,7 @@
       "name": "IPTV-org España",
       "url": "https://iptv-org.github.io/iptv/countries/es.m3u",
       "status": "ok",
-      "entries": 323
+      "entries": 324
     },
     {
       "name": "Free-TV España",
