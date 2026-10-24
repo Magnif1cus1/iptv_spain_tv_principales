@@ -1,6 +1,6 @@
 # Estado de la lista
 
-Actualizado: `2026-10-23T09:22:53+00:00`
+Actualizado: `2026-10-24T08:54:26+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **37**
@@ -82,19 +82,21 @@ Actualizado: `2026-10-23T09:22:53+00:00`
 
 - TDTChannels: ok — 571 entradas
 - IPTV-org España: ok — 324 entradas
-- Free-TV España: ok — 51 entradas
+- Free-TV España: ok — 48 entradas
 - Teleonline: ok — 576 entradas
 
 ## Comprobación de enlaces
 
 - Modo: hls_manifest_and_segment
-- Comprobados (manifiesto y fragmento): 56
-- Conservados por restricción geográfica, sin comprobar: 24
-- Descartados: 33
+- Comprobados (manifiesto y fragmento): 54
+- Conservados por restricción geográfica, sin comprobar: 26
+- Descartados: 31
 
 - La 1 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - La 1 (IPTV-org España): Descartado — HTTP Error 404: Not Found
 - La 1 (IPTV-org España): Descartado — HTTP Error 403: Forbidden
+- La 2 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
+- La 2 (IPTV-org España): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - Antena 3 (IPTV-org España): Descartado — HTTP Error 404: Not Found
 - Antena 3 (Free-TV España): Descartado — <urlopen error [Errno 111] Connection refused>
 - Cuatro (Free-TV España): Descartado — HTTP Error 400: Bad Request
@@ -109,7 +111,6 @@ Actualizado: `2026-10-23T09:22:53+00:00`
 - Divinity (Free-TV España): Descartado — HTTP Error 403: Forbidden
 - Be Mad (Free-TV España): Descartado — HTTP Error 403: Forbidden
 - Neox (Free-TV España): Descartado — HTTP Error 400: Bad Request
-- Nova (Free-TV España): Descartado — HTTP Error 404: Not Found
 - Mega (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - Atreseries (Free-TV España): Descartado — <urlopen error [Errno 111] Connection refused>
 - Boing (Free-TV España): Descartado — HTTP Error 400: Bad Request
@@ -147,5 +148,4 @@ Actualizado: `2026-10-23T09:22:53+00:00`
 - TV Canaria (Teleonline): Descartado — La respuesta no es un manifiesto HLS
 - IB3 (Free-TV España): Descartado — La respuesta no es un manifiesto HLS
 - La 7 Murcia (Free-TV España): Descartado — HTTP Error 403: Not Authorized jwt:anonymous (no valid jwt payload)  token source: header
-- La 7 Castilla y León (Free-TV España): Descartado — HTTP Error 404: Not Found
 - Bon Dia TV (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked

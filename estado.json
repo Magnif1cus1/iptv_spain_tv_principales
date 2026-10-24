@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-23T09:22:53+00:00",
+  "generated_at_utc": "2026-10-24T08:54:26+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -104,7 +104,7 @@
       "name": "Free-TV España",
       "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_spain.m3u8",
       "status": "ok",
-      "entries": 51
+      "entries": 48
     },
     {
       "name": "Teleonline",
@@ -115,10 +115,10 @@
   ],
   "validation": {
     "mode": "hls_manifest_and_segment",
-    "candidate_streams": 113,
-    "passed": 56,
-    "geo_restricted": 24,
-    "failed": 33,
+    "candidate_streams": 111,
+    "passed": 54,
+    "geo_restricted": 26,
+    "failed": 31,
     "checks": [
       {
         "channel": "La 1",
@@ -152,8 +152,8 @@
         "channel": "La 2",
         "source": "TDTChannels",
         "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8",
-        "status": "ok",
-        "check": "hls_manifest_and_segment"
+        "status": "geo_restricted",
+        "reason": "HTTP Error 403: Geoblock"
       },
       {
         "channel": "La 2",
@@ -166,8 +166,8 @@
         "channel": "La 2",
         "source": "IPTV-org España",
         "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main.m3u8",
-        "status": "ok",
-        "check": "hls_manifest_and_segment"
+        "status": "geo_restricted",
+        "reason": "HTTP Error 403: Geoblock"
       },
       {
         "channel": "Antena 3",
@@ -336,13 +336,6 @@
         "url": "http://a3live-lh.akamaihd.net/i/nxhds/geoneox_1@35261/master.m3u8",
         "status": "failed",
         "reason": "HTTP Error 400: Bad Request"
-      },
-      {
-        "channel": "Nova",
-        "source": "Free-TV España",
-        "url": "http://40.160.24.55/Nova/index.m3u8",
-        "status": "failed",
-        "reason": "HTTP Error 404: Not Found"
       },
       {
         "channel": "Mega",
@@ -812,13 +805,6 @@
         "url": "https://rtv-murcia-live.globalmest.com/principal/smil:principal.smil/playlist.m3u8",
         "status": "failed",
         "reason": "HTTP Error 403: Not Authorized jwt:anonymous (no valid jwt payload)  token source: header"
-      },
-      {
-        "channel": "La 7 Castilla y León",
-        "source": "Free-TV España",
-        "url": "http://nws.nice264.com/ilive/cyl/cyl_cyltvlivem_MB_348/playlist.m3u8",
-        "status": "failed",
-        "reason": "HTTP Error 404: Not Found"
       },
       {
         "channel": "TVG",
