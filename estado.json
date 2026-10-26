@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-25T09:11:04+00:00",
+  "generated_at_utc": "2026-10-26T10:11:08+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -51,7 +51,7 @@
     "La 1": 2,
     "La 2": 3,
     "24h": 3,
-    "Teledeporte": 3,
+    "Teledeporte": 2,
     "Clan": 4,
     "TRECE": 3,
     "El Toro TV": 2,
@@ -86,7 +86,7 @@
     "Distrito TV": 2,
     "Sol Música": 1
   },
-  "total_stream_sources": 80,
+  "total_stream_sources": 79,
   "source_results": [
     {
       "name": "TDTChannels",
@@ -98,7 +98,7 @@
       "name": "IPTV-org España",
       "url": "https://iptv-org.github.io/iptv/countries/es.m3u",
       "status": "ok",
-      "entries": 324
+      "entries": 323
     },
     {
       "name": "Free-TV España",
@@ -115,8 +115,8 @@
   ],
   "validation": {
     "mode": "hls_manifest_and_segment",
-    "candidate_streams": 111,
-    "passed": 56,
+    "candidate_streams": 110,
+    "passed": 55,
     "geo_restricted": 24,
     "failed": 31,
     "checks": [
@@ -243,8 +243,8 @@
         "channel": "Teledeporte",
         "source": "IPTV-org España",
         "url": "https://rtve01p.origin.c21livecloud.com/live-origin/tdp-hls/bitrate_1.m3u8",
-        "status": "ok",
-        "check": "hls_manifest_and_segment"
+        "status": "failed",
+        "reason": "<urlopen error [Errno -2] Name or service not known>"
       },
       {
         "channel": "Teledeporte",
@@ -483,13 +483,6 @@
         "url": "https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8",
         "status": "ok",
         "check": "hls_manifest_and_segment"
-      },
-      {
-        "channel": "Canal Sur Andalucía",
-        "source": "IPTV-org España",
-        "url": "https://cdn.stmify.com/zapitv/stream/CANAL_SUR/canal_sur_hd.mpd",
-        "status": "failed",
-        "reason": "HTTP Error 404: Not Found"
       },
       {
         "channel": "Canal Sur Andalucía",

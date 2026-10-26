@@ -1,17 +1,17 @@
 # Estado de la lista
 
-Actualizado: `2026-10-25T09:11:04+00:00`
+Actualizado: `2026-10-26T10:11:08+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **37**
-- Fuentes totales incluidas: **80**
+- Fuentes totales incluidas: **79**
 
 ## Fuentes encontradas
 
 - La 1: 2
 - La 2: 3
 - 24h: 3
-- Teledeporte: 3
+- Teledeporte: 2
 - Clan: 4
 - TRECE: 3
 - El Toro TV: 2
@@ -81,14 +81,14 @@ Actualizado: `2026-10-25T09:11:04+00:00`
 ## Listas consultadas
 
 - TDTChannels: ok — 571 entradas
-- IPTV-org España: ok — 324 entradas
+- IPTV-org España: ok — 323 entradas
 - Free-TV España: ok — 48 entradas
 - Teleonline: ok — 576 entradas
 
 ## Comprobación de enlaces
 
 - Modo: hls_manifest_and_segment
-- Comprobados (manifiesto y fragmento): 56
+- Comprobados (manifiesto y fragmento): 55
 - Conservados por restricción geográfica, sin comprobar: 24
 - Descartados: 31
 
@@ -101,6 +101,7 @@ Actualizado: `2026-10-25T09:11:04+00:00`
 - Telecinco (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - laSexta (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - Teledeporte (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
+- Teledeporte (IPTV-org España): Descartado — <urlopen error [Errno -2] Name or service not known>
 - Teledeporte (Teleonline): Descartado — Cifrado DRM/no compatible con la lista VLC
 - Clan (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - Clan (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
@@ -117,7 +118,6 @@ Actualizado: `2026-10-25T09:11:04+00:00`
 - Euronews (TDTChannels): Descartado — HTTP Error 403: Restricted Content
 - Telemadrid (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - La Otra (Free-TV España): Descartado — HTTP Error 400: Bad Request
-- Canal Sur Andalucía (IPTV-org España): Descartado — HTTP Error 404: Not Found
 - TV3 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
 - TV3 CAT (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
 - TV3 CAT (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
