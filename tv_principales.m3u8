@@ -95,10 +95,7 @@ https://live-24-canalsur.interactvty.pro/9bb0f4edcb8946e79f5017ddca6c02b0/74cdbd
 #EXTINF:-1 tvg-id="CanalSurA.TV" tvg-logo="https://graph.facebook.com/canalsurradioytv/picture?width=200&height=200" group-title="Favoritos España" tvg-name="Canal Sur Andalucía",Canal Sur Andalucía — Fuente 2
 https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8
 
-#EXTINF:-1 tvg-name="Canal Sur Andalucía" tvg-logo="https://i.imgur.com/WcVOXPr.png" tvg-id="CanalSurAndalucia.es" tvg-chno="3" tvg-country="ES" group-title="Favoritos España",Canal Sur Andalucía — Fuente 3
-https://d4oe4cnrgi9c9.cloudfront.net/master.m3u8
-
-#EXTINF:-1 tvg-id="Canal.Sur.Andalucía.es" tvg-name="Canal Sur Andalucía" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Canal%20Sur%20Andaluc%C3%ADa.png" group-title="Favoritos España",Canal Sur Andalucía — Fuente 4
+#EXTINF:-1 tvg-id="Canal.Sur.Andalucía.es" tvg-name="Canal Sur Andalucía" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Canal%20Sur%20Andaluc%C3%ADa.png" group-title="Favoritos España",Canal Sur Andalucía — Fuente 3
 https://cdnlive.codev8.net/rtvalive/smil:channel22.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="CanalSurA.TV" tvg-logo="https://graph.facebook.com/canalsurradioytv/picture?width=200&height=200" group-title="Favoritos España" tvg-name="Canal Sur 2",Canal Sur 2 — Fuente 1
