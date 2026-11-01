@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-31T10:25:06+00:00",
+  "generated_at_utc": "2026-11-01T11:18:30+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -19,7 +19,7 @@
     }
   ],
   "requested_channels": 62,
-  "available_channels": 37,
+  "available_channels": 36,
   "missing_channels": [
     "Antena 3",
     "Cuatro",
@@ -45,7 +45,8 @@
     "IB3",
     "TPA",
     "La 7 Murcia",
-    "La 7 Castilla y León"
+    "La 7 Castilla y León",
+    "Distrito TV"
   ],
   "sources_per_channel": {
     "La 1": 2,
@@ -83,10 +84,9 @@
     "betevé": 2,
     "Bon Dia TV": 2,
     "La 8 Mediterráneo": 1,
-    "Distrito TV": 2,
     "Sol Música": 1
   },
-  "total_stream_sources": 78,
+  "total_stream_sources": 76,
   "source_results": [
     {
       "name": "TDTChannels",
@@ -116,9 +116,9 @@
   "validation": {
     "mode": "hls_manifest_and_segment",
     "candidate_streams": 110,
-    "passed": 54,
+    "passed": 52,
     "geo_restricted": 24,
-    "failed": 32,
+    "failed": 34,
     "checks": [
       {
         "channel": "La 1",
@@ -873,15 +873,15 @@
         "channel": "Distrito TV",
         "source": "TDTChannels",
         "url": "https://live.emitstream.com/hls/3mn7wpcv7hbmxmdzaxap/master.m3u8",
-        "status": "ok",
-        "check": "hls_manifest_and_segment"
+        "status": "failed",
+        "reason": "HTTP Error 404: Not Found"
       },
       {
         "channel": "Distrito TV",
         "source": "IPTV-org España",
         "url": "https://nlb2-live.emitstream.com/hls/3mn7wpcv7hbmxmdzaxap/master.m3u8",
-        "status": "ok",
-        "check": "hls_manifest_and_segment"
+        "status": "failed",
+        "reason": "HTTP Error 404: Not Found"
       },
       {
         "channel": "Sol Música",
