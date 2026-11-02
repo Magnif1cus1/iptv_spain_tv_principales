@@ -12,12 +12,12 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=15619&avod=1&coppa=0&td=6&
 https://rtvelivestream.rtve.es/rtvesec/la1/la1_main_dvr.m3u8
 
 #EXTINF:-1 tvg-id="La2.TV" tvg-logo="https://graph.facebook.com/la2detve/picture?width=200&height=200" group-title="Favoritos España" tvg-name="La 2",La 2 — Fuente 1
-https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8
-
-#EXTINF:-1 tvg-id="La2.TV" tvg-logo="https://graph.facebook.com/la2detve/picture?width=200&height=200" group-title="Favoritos España" tvg-name="La 2",La 2 — Fuente 2
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=15618
 
-#EXTINF:-1 tvg-name="La 2" tvg-id="La2.es@SD" tvg-logo="https://i.ibb.co/rfsr9PSh/La-2.png" group-title="Favoritos España",La 2 — Fuente 3
+#EXTINF:-1 tvg-id="La2.TV" tvg-logo="https://graph.facebook.com/la2detve/picture?width=200&height=200" group-title="Favoritos España" tvg-name="La 2",La 2 — Fuente 2 [restricción geográfica]
+https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8
+
+#EXTINF:-1 tvg-name="La 2" tvg-id="La2.es@SD" tvg-logo="https://i.ibb.co/rfsr9PSh/La-2.png" group-title="Favoritos España",La 2 — Fuente 3 [restricción geográfica]
 https://rtvelivestream.rtve.es/rtvesec/la2/la2_main.m3u8
 
 #EXTINF:-1 tvg-id="24Horas.TV" tvg-logo="https://pbs.twimg.com/profile_images/1634293543987453954/mb1Rzmso_200x200.jpg" group-title="Favoritos España" tvg-name="24h",24h — Fuente 1
@@ -230,6 +230,12 @@ https://directes-tv-cat.3catdirectes.cat/live-content/bondia-hls/master.m3u8
 
 #EXTINF:-1 tvg-id="8M.TV" tvg-logo="https://graph.facebook.com/la8mediterraneo/picture?width=200&height=200" group-title="Favoritos España" tvg-name="La 8 Mediterráneo",La 8 Mediterráneo
 https://newscript.gestec-video.com/hls/8TVEVENTOS.m3u8
+
+#EXTINF:-1 tvg-id="Distrito.TV" tvg-logo="https://graph.facebook.com/2004860103163343/picture?width=200&height=200" group-title="Favoritos España" tvg-name="Distrito TV",Distrito TV — Fuente 1
+https://live.emitstream.com/hls/3mn7wpcv7hbmxmdzaxap/master.m3u8
+
+#EXTINF:-1 tvg-name="Distrito TV" tvg-id="DistritoTV.es@SD" tvg-logo="https://i.imgur.com/AqGIoIt.png" group-title="Favoritos España",Distrito TV — Fuente 2
+https://nlb2-live.emitstream.com/hls/3mn7wpcv7hbmxmdzaxap/master.m3u8
 
 #EXTINF:-1 tvg-id="SolMusica.TV" tvg-logo="https://graph.facebook.com/solmusica/picture?width=200&height=200" group-title="Favoritos España" tvg-name="Sol Música",Sol Música
 https://d2glyu450vvghm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-21u4g5cjglv02/sm.m3u8

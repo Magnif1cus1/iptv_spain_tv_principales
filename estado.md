@@ -1,10 +1,10 @@
 # Estado de la lista
 
-Actualizado: `2026-11-01T11:18:30+00:00`
+Actualizado: `2026-11-02T12:29:23+00:00`
 
 - Canales solicitados: **62**
-- Canales con al menos una fuente: **36**
-- Fuentes totales incluidas: **76**
+- Canales con al menos una fuente: **37**
+- Fuentes totales incluidas: **78**
 
 ## Fuentes encontradas
 
@@ -43,6 +43,7 @@ Actualizado: `2026-11-01T11:18:30+00:00`
 - betevé: 2
 - Bon Dia TV: 2
 - La 8 Mediterráneo: 1
+- Distrito TV: 2
 - Sol Música: 1
 
 ## Canales sin fuente publicada
@@ -72,7 +73,6 @@ Actualizado: `2026-11-01T11:18:30+00:00`
 - TPA
 - La 7 Murcia
 - La 7 Castilla y León
-- Distrito TV
 
 > La comprobación descarga el manifiesto HLS y parte de un fragmento multimedia. No prueba la decodificación en VLC ni garantiza disponibilidad futura o desde otro país.
 > Se conservan los enlaces cuyo servidor declara explícitamente un bloqueo geográfico. Aparecen marcados en VLC y no se cuentan como comprobados: pueden funcionar desde España aunque GitHub no pueda verificarlos.
@@ -89,12 +89,14 @@ Actualizado: `2026-11-01T11:18:30+00:00`
 
 - Modo: hls_manifest_and_segment
 - Comprobados (manifiesto y fragmento): 52
-- Conservados por restricción geográfica, sin comprobar: 24
-- Descartados: 34
+- Conservados por restricción geográfica, sin comprobar: 26
+- Descartados: 32
 
 - La 1 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - La 1 (IPTV-org España): Descartado — HTTP Error 404: Not Found
 - La 1 (IPTV-org España): Descartado — HTTP Error 403: Forbidden
+- La 2 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
+- La 2 (IPTV-org España): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - Antena 3 (IPTV-org España): Descartado — HTTP Error 404: Not Found
 - Antena 3 (Free-TV España): Descartado — <urlopen error [Errno 111] Connection refused>
 - Cuatro (Free-TV España): Descartado — HTTP Error 400: Bad Request
@@ -148,5 +150,3 @@ Actualizado: `2026-11-01T11:18:30+00:00`
 - IB3 (Free-TV España): Descartado — La respuesta no es un manifiesto HLS
 - La 7 Murcia (Free-TV España): Descartado — HTTP Error 403: Not Authorized jwt:anonymous (no valid jwt payload)  token source: header
 - Bon Dia TV (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
-- Distrito TV (TDTChannels): Descartado — HTTP Error 404: Not Found
-- Distrito TV (IPTV-org España): Descartado — HTTP Error 404: Not Found
