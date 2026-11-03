@@ -77,12 +77,6 @@ https://rtvelivestream.rtve.es/rtvesec/rne/rne_para_todos_main.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="RNE para todos" tvg-logo="https://graph.facebook.com/radionacionalrne/picture?width=200&amp;height=200" group-title="Favoritos España",RNE para todos — Fuente 2
 https://ztnr.rtve.es/ztnr/6688753.m3u8
 
-#EXTINF:-1 tvg-id="RMTV.TV" tvg-logo="https://graph.facebook.com/RealMadrid/picture?width=200&height=200" group-title="Favoritos España" tvg-name="Real Madrid TV",Real Madrid TV — Fuente 1
-https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
-
-#EXTINF:-1 tvg-id="RMTV.TV" tvg-logo="https://graph.facebook.com/RealMadrid/picture?width=200&height=200" group-title="Favoritos España" tvg-name="Real Madrid TV",Real Madrid TV — Fuente 2
-https://rmtv.akamaized.net/hls/live/2043154/rmtv-en-web/master.m3u8
-
 #EXTINF:-1 tvg-name="Telemadrid" tvg-id="Telemadrid.es@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/TeleMadrid.svg/960px-TeleMadrid.svg.png" group-title="Favoritos España",Telemadrid
 https://live.telemadrid.cross-media.es/6389770581112/eu-central-1/6416060453001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiajI5YjgyLmVncmVzcy5haGc3NmwiLCJhY2NvdW50X2lkIjoiNjQxNjA2MDQ1MzAwMSIsImVobiI6ImxpdmUudGVsZW1hZHJpZC5jcm9zcy1tZWRpYS5lcyIsImlzcyI6ImJsaXZlLXBsYXliYWNrLXNvdXJjZS1hcGkiLCJzdWIiOiJwYXRobWFwdG9rZW4iLCJhdWQiOlsiNjQxNjA2MDQ1MzAwMSJdLCJqdGkiOiI2Mzg5NzcwNTgxMTEyIn0.kqriAMUkHT6m0V6wkCHJum_EUyL4PAi1zJMKlfmYHEU/playlist-hls.m3u8
 
