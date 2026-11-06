@@ -1,10 +1,10 @@
 # Estado de la lista
 
-Actualizado: `2026-11-05T12:25:18+00:00`
+Actualizado: `2026-11-06T12:09:22+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **37**
-- Fuentes totales incluidas: **78**
+- Fuentes totales incluidas: **81**
 
 ## Fuentes encontradas
 
@@ -24,7 +24,7 @@ Actualizado: `2026-11-05T12:25:18+00:00`
 - Canal Sur Andalucía: 3
 - Canal Sur 2: 2
 - Canal Sur Más Noticias: 2
-- TV3: 1
+- TV3: 2
 - TV3 CAT: 4
 - 3CatInfo: 6
 - 33: 4
@@ -36,8 +36,8 @@ Actualizado: `2026-11-05T12:25:18+00:00`
 - Castilla-La Mancha Media: 2
 - Canal Extremadura: 1
 - TV Canaria: 2
-- TVG: 1
-- TVG 2: 1
+- TVG: 2
+- TVG 2: 2
 - Telemiño: 1
 - TeleVigo: 2
 - betevé: 2
@@ -88,7 +88,7 @@ Actualizado: `2026-11-05T12:25:18+00:00`
 ## Comprobación de enlaces
 
 - Modo: hls_manifest_and_segment
-- Comprobados (manifiesto y fragmento): 52
+- Comprobados (manifiesto y fragmento): 55
 - Conservados por restricción geográfica, sin comprobar: 26
 - Descartados: 32
 
