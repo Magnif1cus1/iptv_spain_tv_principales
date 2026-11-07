@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-06T12:09:22+00:00",
+  "generated_at_utc": "2026-11-07T11:06:18+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -54,7 +54,7 @@
     "Teledeporte": 2,
     "Clan": 4,
     "TRECE": 3,
-    "El Toro TV": 2,
+    "El Toro TV": 1,
     "Negocios TV": 2,
     "El País": 1,
     "RNE para todos": 2,
@@ -86,7 +86,7 @@
     "Distrito TV": 2,
     "Sol Música": 1
   },
-  "total_stream_sources": 81,
+  "total_stream_sources": 80,
   "source_results": [
     {
       "name": "TDTChannels",
@@ -98,7 +98,7 @@
       "name": "IPTV-org España",
       "url": "https://iptv-org.github.io/iptv/countries/es.m3u",
       "status": "ok",
-      "entries": 325
+      "entries": 326
     },
     {
       "name": "Free-TV España",
@@ -116,9 +116,9 @@
   "validation": {
     "mode": "hls_manifest_and_segment",
     "candidate_streams": 113,
-    "passed": 55,
-    "geo_restricted": 26,
-    "failed": 32,
+    "passed": 56,
+    "geo_restricted": 24,
+    "failed": 33,
     "checks": [
       {
         "channel": "La 1",
@@ -152,8 +152,8 @@
         "channel": "La 2",
         "source": "TDTChannels",
         "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8",
-        "status": "geo_restricted",
-        "reason": "HTTP Error 403: Geoblock"
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
       },
       {
         "channel": "La 2",
@@ -166,8 +166,8 @@
         "channel": "La 2",
         "source": "IPTV-org España",
         "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main.m3u8",
-        "status": "geo_restricted",
-        "reason": "HTTP Error 403: Geoblock"
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
       },
       {
         "channel": "Antena 3",
@@ -383,8 +383,8 @@
         "channel": "El Toro TV",
         "source": "TDTChannels",
         "url": "https://streaming-1.eltorotv.com/lb0/eltorotv-streaming-web/index.m3u8",
-        "status": "ok",
-        "check": "hls_manifest_and_segment"
+        "status": "failed",
+        "reason": "HTTP Error 526: <none>"
       },
       {
         "channel": "El Toro TV",

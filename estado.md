@@ -1,10 +1,10 @@
 # Estado de la lista
 
-Actualizado: `2026-11-06T12:09:22+00:00`
+Actualizado: `2026-11-07T11:06:18+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **37**
-- Fuentes totales incluidas: **81**
+- Fuentes totales incluidas: **80**
 
 ## Fuentes encontradas
 
@@ -14,7 +14,7 @@ Actualizado: `2026-11-06T12:09:22+00:00`
 - Teledeporte: 2
 - Clan: 4
 - TRECE: 3
-- El Toro TV: 2
+- El Toro TV: 1
 - Negocios TV: 2
 - El País: 1
 - RNE para todos: 2
@@ -81,22 +81,20 @@ Actualizado: `2026-11-06T12:09:22+00:00`
 ## Listas consultadas
 
 - TDTChannels: ok — 573 entradas
-- IPTV-org España: ok — 325 entradas
+- IPTV-org España: ok — 326 entradas
 - Free-TV España: ok — 48 entradas
 - Teleonline: ok — 576 entradas
 
 ## Comprobación de enlaces
 
 - Modo: hls_manifest_and_segment
-- Comprobados (manifiesto y fragmento): 55
-- Conservados por restricción geográfica, sin comprobar: 26
-- Descartados: 32
+- Comprobados (manifiesto y fragmento): 56
+- Conservados por restricción geográfica, sin comprobar: 24
+- Descartados: 33
 
 - La 1 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - La 1 (IPTV-org España): Descartado — HTTP Error 404: Not Found
 - La 1 (IPTV-org España): Descartado — HTTP Error 403: Forbidden
-- La 2 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
-- La 2 (IPTV-org España): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - Antena 3 (IPTV-org España): Descartado — HTTP Error 404: Not Found
 - Antena 3 (Free-TV España): Descartado — <urlopen error [Errno 111] Connection refused>
 - Cuatro (Free-TV España): Descartado — HTTP Error 400: Bad Request
@@ -118,6 +116,7 @@ Actualizado: `2026-11-06T12:09:22+00:00`
 - Squirrel (Free-TV España): Descartado — HTTP Error 403: Forbidden
 - BOM Cine (Free-TV España): Descartado — HTTP Error 403: Forbidden
 - Euronews (TDTChannels): Descartado — HTTP Error 403: Restricted Content
+- El Toro TV (TDTChannels): Descartado — HTTP Error 526: <none>
 - Telemadrid (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - La Otra (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - Canal Sur Andalucía (Free-TV España): Descartado — HTTP Error 404: Not Found
