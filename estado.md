@@ -1,10 +1,10 @@
 # Estado de la lista
 
-Actualizado: `2026-11-07T11:06:18+00:00`
+Actualizado: `2026-11-08T11:19:13+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **37**
-- Fuentes totales incluidas: **80**
+- Fuentes totales incluidas: **81**
 
 ## Fuentes encontradas
 
@@ -18,7 +18,7 @@ Actualizado: `2026-11-07T11:06:18+00:00`
 - Negocios TV: 2
 - El País: 1
 - RNE para todos: 2
-- Real Madrid TV: 2
+- Real Madrid TV: 3
 - Telemadrid: 1
 - La Otra: 1
 - Canal Sur Andalucía: 3
@@ -88,7 +88,7 @@ Actualizado: `2026-11-07T11:06:18+00:00`
 ## Comprobación de enlaces
 
 - Modo: hls_manifest_and_segment
-- Comprobados (manifiesto y fragmento): 56
+- Comprobados (manifiesto y fragmento): 57
 - Conservados por restricción geográfica, sin comprobar: 24
 - Descartados: 33
 

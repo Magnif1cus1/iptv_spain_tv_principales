@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-07T11:06:18+00:00",
+  "generated_at_utc": "2026-11-08T11:19:13+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -58,7 +58,7 @@
     "Negocios TV": 2,
     "El País": 1,
     "RNE para todos": 2,
-    "Real Madrid TV": 2,
+    "Real Madrid TV": 3,
     "Telemadrid": 1,
     "La Otra": 1,
     "Canal Sur Andalucía": 3,
@@ -86,7 +86,7 @@
     "Distrito TV": 2,
     "Sol Música": 1
   },
-  "total_stream_sources": 80,
+  "total_stream_sources": 81,
   "source_results": [
     {
       "name": "TDTChannels",
@@ -115,8 +115,8 @@
   ],
   "validation": {
     "mode": "hls_manifest_and_segment",
-    "candidate_streams": 113,
-    "passed": 56,
+    "candidate_streams": 114,
+    "passed": 57,
     "geo_restricted": 24,
     "failed": 33,
     "checks": [
@@ -439,6 +439,13 @@
         "channel": "Real Madrid TV",
         "source": "TDTChannels",
         "url": "https://rmtv.akamaized.net/hls/live/2043154/rmtv-en-web/master.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Real Madrid TV",
+        "source": "IPTV-org España",
+        "url": "http://90.163.85.113:8093/stream/26/index.m3u8",
         "status": "ok",
         "check": "hls_manifest_and_segment"
       },
