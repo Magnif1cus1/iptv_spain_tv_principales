@@ -1,10 +1,10 @@
 # Estado de la lista
 
-Actualizado: `2026-11-08T11:19:13+00:00`
+Actualizado: `2026-11-09T12:55:55+00:00`
 
 - Canales solicitados: **62**
-- Canales con al menos una fuente: **37**
-- Fuentes totales incluidas: **81**
+- Canales con al menos una fuente: **35**
+- Fuentes totales incluidas: **78**
 
 ## Fuentes encontradas
 
@@ -14,7 +14,6 @@ Actualizado: `2026-11-08T11:19:13+00:00`
 - Teledeporte: 2
 - Clan: 4
 - TRECE: 3
-- El Toro TV: 1
 - Negocios TV: 2
 - El País: 1
 - RNE para todos: 2
@@ -39,7 +38,6 @@ Actualizado: `2026-11-08T11:19:13+00:00`
 - TVG: 2
 - TVG 2: 2
 - Telemiño: 1
-- TeleVigo: 2
 - betevé: 2
 - Bon Dia TV: 2
 - La 8 Mediterráneo: 1
@@ -68,11 +66,13 @@ Actualizado: `2026-11-08T11:19:13+00:00`
 - BOM Cine
 - GOL Play
 - Euronews
+- El Toro TV
 - Aragón TV
 - IB3
 - TPA
 - La 7 Murcia
 - La 7 Castilla y León
+- TeleVigo
 
 > La comprobación descarga el manifiesto HLS y parte de un fragmento multimedia. No prueba la decodificación en VLC ni garantiza disponibilidad futura o desde otro país.
 > Se conservan los enlaces cuyo servidor declara explícitamente un bloqueo geográfico. Aparecen marcados en VLC y no se cuentan como comprobados: pueden funcionar desde España aunque GitHub no pueda verificarlos.
@@ -88,13 +88,15 @@ Actualizado: `2026-11-08T11:19:13+00:00`
 ## Comprobación de enlaces
 
 - Modo: hls_manifest_and_segment
-- Comprobados (manifiesto y fragmento): 57
-- Conservados por restricción geográfica, sin comprobar: 24
-- Descartados: 33
+- Comprobados (manifiesto y fragmento): 52
+- Conservados por restricción geográfica, sin comprobar: 26
+- Descartados: 36
 
 - La 1 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - La 1 (IPTV-org España): Descartado — HTTP Error 404: Not Found
 - La 1 (IPTV-org España): Descartado — HTTP Error 403: Forbidden
+- La 2 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
+- La 2 (IPTV-org España): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - Antena 3 (IPTV-org España): Descartado — HTTP Error 404: Not Found
 - Antena 3 (Free-TV España): Descartado — <urlopen error [Errno 111] Connection refused>
 - Cuatro (Free-TV España): Descartado — HTTP Error 400: Bad Request
@@ -116,7 +118,8 @@ Actualizado: `2026-11-08T11:19:13+00:00`
 - Squirrel (Free-TV España): Descartado — HTTP Error 403: Forbidden
 - BOM Cine (Free-TV España): Descartado — HTTP Error 403: Forbidden
 - Euronews (TDTChannels): Descartado — HTTP Error 403: Restricted Content
-- El Toro TV (TDTChannels): Descartado — HTTP Error 526: <none>
+- El Toro TV (TDTChannels): Descartado — <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1035)>
+- El Toro TV (TDTChannels): Descartado — <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1035)>
 - Telemadrid (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - La Otra (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - Canal Sur Andalucía (Free-TV España): Descartado — HTTP Error 404: Not Found
@@ -148,4 +151,6 @@ Actualizado: `2026-11-08T11:19:13+00:00`
 - TV Canaria (Teleonline): Descartado — La respuesta no es un manifiesto HLS
 - IB3 (Free-TV España): Descartado — La respuesta no es un manifiesto HLS
 - La 7 Murcia (Free-TV España): Descartado — HTTP Error 403: Not Authorized jwt:anonymous (no valid jwt payload)  token source: header
+- TeleVigo (TDTChannels): Descartado — HTTP Error 400: Bad Request
+- TeleVigo (IPTV-org España): Descartado — HTTP Error 400: Bad Request
 - Bon Dia TV (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
