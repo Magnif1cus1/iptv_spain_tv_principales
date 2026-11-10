@@ -216,6 +216,13 @@ https://crtvg-tvg2.flumotion.cloud/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://graph.facebook.com/teleminho/picture?width=200&height=200" group-title="Favoritos España" tvg-name="Telemiño",Telemiño
 https://laregionlive.flumotion.cloud/laregionlive/smil:channel1.smil/playlist.m3u8
 
+#EXTINF:-1 tvg-id="TeleVigo.TV" tvg-logo="https://graph.facebook.com/televigo/picture?width=200&height=200" group-title="Favoritos España" tvg-name="TeleVigo",TeleVigo — Fuente 1
+https://stream-us-east-1.getpublica.com/playlist.m3u8?cb=[CACHEBUSTER]&network_id=16113&live=1&avod=0&hls_marker=1&position=preroll&pod_duration=120&app_bundle=com.streamingconnect.viva&app_domain=mirametv.live&app_category=linear_tv&ssai_enabled=1&content_cat=IAB1&content_channel=televigo&content_genre=tv_broadcaster&content_network=streamingconnect&content_rating=TV-G&us_privacy=[US_PRIVACY]&gdpr=[GDPR]&ifa_type=[IFA_TYPE]&min_ad_duration=6&max_ad_duration=120&content_id=[CONTENT_ID]
+
+#EXTINF:-1 tvg-name="TeleVigo" tvg-id="TeleVigo.es@SD" tvg-logo="https://i.imgur.com/4iVmlFa.png" http-referrer="http://www.televigo.com" group-title="Favoritos España",TeleVigo — Fuente 2
+#EXTVLCOPT:http-referrer=http://www.televigo.com
+https://cloud.fastchannel.es/mic/manifiest/hls/televigo/televigo.m3u8
+
 #EXTINF:-1 tvg-id="BTV.TV" tvg-logo="https://graph.facebook.com/betevecat/picture?width=200&height=200" group-title="Favoritos España" tvg-name="betevé",betevé — Fuente 1
 https://cdnapisec.kaltura.com/p/2346171/sp/234617100/playManifest/entryId/1_vfibi2fe/protocol/https/format/applehttp/a.m3u8?referrer=aHR0cHM6Ly9iZXRldmUuY2F0
 
