@@ -1,10 +1,10 @@
 # Estado de la lista
 
-Actualizado: `2026-11-10T12:41:58+00:00`
+Actualizado: `2026-11-11T11:55:08+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **36**
-- Fuentes totales incluidas: **80**
+- Fuentes totales incluidas: **79**
 
 ## Fuentes encontradas
 
@@ -17,7 +17,7 @@ Actualizado: `2026-11-10T12:41:58+00:00`
 - Negocios TV: 2
 - El País: 1
 - RNE para todos: 2
-- Real Madrid TV: 3
+- Real Madrid TV: 2
 - Telemadrid: 1
 - La Otra: 1
 - Canal Sur Andalucía: 3
@@ -81,16 +81,16 @@ Actualizado: `2026-11-10T12:41:58+00:00`
 ## Listas consultadas
 
 - TDTChannels: ok — 573 entradas
-- IPTV-org España: ok — 327 entradas
+- IPTV-org España: ok — 326 entradas
 - Free-TV España: ok — 48 entradas
 - Teleonline: ok — 576 entradas
 
 ## Comprobación de enlaces
 
 - Modo: hls_manifest_and_segment
-- Comprobados (manifiesto y fragmento): 54
+- Comprobados (manifiesto y fragmento): 53
 - Conservados por restricción geográfica, sin comprobar: 26
-- Descartados: 34
+- Descartados: 35
 
 - La 1 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - La 1 (IPTV-org España): Descartado — HTTP Error 404: Not Found
@@ -120,6 +120,7 @@ Actualizado: `2026-11-10T12:41:58+00:00`
 - Euronews (TDTChannels): Descartado — HTTP Error 403: Restricted Content
 - El Toro TV (TDTChannels): Descartado — <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1035)>
 - El Toro TV (TDTChannels): Descartado — <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1035)>
+- Real Madrid TV (IPTV-org España): Descartado — <urlopen error timed out>
 - Telemadrid (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - La Otra (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - Canal Sur Andalucía (Free-TV España): Descartado — HTTP Error 404: Not Found

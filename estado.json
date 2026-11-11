@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-10T12:41:58+00:00",
+  "generated_at_utc": "2026-11-11T11:55:08+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -58,7 +58,7 @@
     "Negocios TV": 2,
     "El País": 1,
     "RNE para todos": 2,
-    "Real Madrid TV": 3,
+    "Real Madrid TV": 2,
     "Telemadrid": 1,
     "La Otra": 1,
     "Canal Sur Andalucía": 3,
@@ -86,7 +86,7 @@
     "Distrito TV": 2,
     "Sol Música": 1
   },
-  "total_stream_sources": 80,
+  "total_stream_sources": 79,
   "source_results": [
     {
       "name": "TDTChannels",
@@ -98,7 +98,7 @@
       "name": "IPTV-org España",
       "url": "https://iptv-org.github.io/iptv/countries/es.m3u",
       "status": "ok",
-      "entries": 327
+      "entries": 326
     },
     {
       "name": "Free-TV España",
@@ -116,9 +116,9 @@
   "validation": {
     "mode": "hls_manifest_and_segment",
     "candidate_streams": 114,
-    "passed": 54,
+    "passed": 53,
     "geo_restricted": 26,
-    "failed": 34,
+    "failed": 35,
     "checks": [
       {
         "channel": "La 1",
@@ -446,8 +446,8 @@
         "channel": "Real Madrid TV",
         "source": "IPTV-org España",
         "url": "http://90.163.85.113:8093/stream/26/index.m3u8",
-        "status": "ok",
-        "check": "hls_manifest_and_segment"
+        "status": "failed",
+        "reason": "<urlopen error timed out>"
       },
       {
         "channel": "Telemadrid",
