@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-11T11:55:08+00:00",
+  "generated_at_utc": "2026-11-12T12:47:14+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -19,7 +19,7 @@
     }
   ],
   "requested_channels": 62,
-  "available_channels": 36,
+  "available_channels": 37,
   "missing_channels": [
     "Antena 3",
     "Cuatro",
@@ -41,7 +41,6 @@
     "BOM Cine",
     "GOL Play",
     "Euronews",
-    "El Toro TV",
     "Aragón TV",
     "IB3",
     "TPA",
@@ -55,10 +54,11 @@
     "Teledeporte": 2,
     "Clan": 4,
     "TRECE": 3,
+    "El Toro TV": 2,
     "Negocios TV": 2,
     "El País": 1,
     "RNE para todos": 2,
-    "Real Madrid TV": 2,
+    "Real Madrid TV": 3,
     "Telemadrid": 1,
     "La Otra": 1,
     "Canal Sur Andalucía": 3,
@@ -86,7 +86,7 @@
     "Distrito TV": 2,
     "Sol Música": 1
   },
-  "total_stream_sources": 79,
+  "total_stream_sources": 82,
   "source_results": [
     {
       "name": "TDTChannels",
@@ -116,9 +116,9 @@
   "validation": {
     "mode": "hls_manifest_and_segment",
     "candidate_streams": 114,
-    "passed": 53,
+    "passed": 56,
     "geo_restricted": 26,
-    "failed": 35,
+    "failed": 32,
     "checks": [
       {
         "channel": "La 1",
@@ -383,15 +383,15 @@
         "channel": "El Toro TV",
         "source": "TDTChannels",
         "url": "https://streaming-1.eltorotv.com/lb0/eltorotv-streaming-web/index.m3u8",
-        "status": "failed",
-        "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1035)>"
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
       },
       {
         "channel": "El Toro TV",
         "source": "TDTChannels",
         "url": "https://edge-nodo-002.streaming.hitcloser.net/eltorotv-streaming-web/index.m3u8",
-        "status": "failed",
-        "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1035)>"
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
       },
       {
         "channel": "Negocios TV",
@@ -446,8 +446,8 @@
         "channel": "Real Madrid TV",
         "source": "IPTV-org España",
         "url": "http://90.163.85.113:8093/stream/26/index.m3u8",
-        "status": "failed",
-        "reason": "<urlopen error timed out>"
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
       },
       {
         "channel": "Telemadrid",

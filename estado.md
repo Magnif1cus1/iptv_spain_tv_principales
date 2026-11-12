@@ -1,10 +1,10 @@
 # Estado de la lista
 
-Actualizado: `2026-11-11T11:55:08+00:00`
+Actualizado: `2026-11-12T12:47:14+00:00`
 
 - Canales solicitados: **62**
-- Canales con al menos una fuente: **36**
-- Fuentes totales incluidas: **79**
+- Canales con al menos una fuente: **37**
+- Fuentes totales incluidas: **82**
 
 ## Fuentes encontradas
 
@@ -14,10 +14,11 @@ Actualizado: `2026-11-11T11:55:08+00:00`
 - Teledeporte: 2
 - Clan: 4
 - TRECE: 3
+- El Toro TV: 2
 - Negocios TV: 2
 - El País: 1
 - RNE para todos: 2
-- Real Madrid TV: 2
+- Real Madrid TV: 3
 - Telemadrid: 1
 - La Otra: 1
 - Canal Sur Andalucía: 3
@@ -67,7 +68,6 @@ Actualizado: `2026-11-11T11:55:08+00:00`
 - BOM Cine
 - GOL Play
 - Euronews
-- El Toro TV
 - Aragón TV
 - IB3
 - TPA
@@ -88,9 +88,9 @@ Actualizado: `2026-11-11T11:55:08+00:00`
 ## Comprobación de enlaces
 
 - Modo: hls_manifest_and_segment
-- Comprobados (manifiesto y fragmento): 53
+- Comprobados (manifiesto y fragmento): 56
 - Conservados por restricción geográfica, sin comprobar: 26
-- Descartados: 35
+- Descartados: 32
 
 - La 1 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - La 1 (IPTV-org España): Descartado — HTTP Error 404: Not Found
@@ -118,9 +118,6 @@ Actualizado: `2026-11-11T11:55:08+00:00`
 - Squirrel (Free-TV España): Descartado — HTTP Error 403: Forbidden
 - BOM Cine (Free-TV España): Descartado — HTTP Error 403: Forbidden
 - Euronews (TDTChannels): Descartado — HTTP Error 403: Restricted Content
-- El Toro TV (TDTChannels): Descartado — <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1035)>
-- El Toro TV (TDTChannels): Descartado — <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1035)>
-- Real Madrid TV (IPTV-org España): Descartado — <urlopen error timed out>
 - Telemadrid (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - La Otra (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - Canal Sur Andalucía (Free-TV España): Descartado — HTTP Error 404: Not Found
