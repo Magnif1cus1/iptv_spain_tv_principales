@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-12T12:47:14+00:00",
+  "generated_at_utc": "2026-11-13T12:16:35+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -98,7 +98,7 @@
       "name": "IPTV-org España",
       "url": "https://iptv-org.github.io/iptv/countries/es.m3u",
       "status": "ok",
-      "entries": 326
+      "entries": 325
     },
     {
       "name": "Free-TV España",
@@ -115,10 +115,10 @@
   ],
   "validation": {
     "mode": "hls_manifest_and_segment",
-    "candidate_streams": 114,
+    "candidate_streams": 113,
     "passed": 56,
     "geo_restricted": 26,
-    "failed": 32,
+    "failed": 31,
     "checks": [
       {
         "channel": "La 1",
@@ -168,13 +168,6 @@
         "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main.m3u8",
         "status": "geo_restricted",
         "reason": "HTTP Error 403: Geoblock"
-      },
-      {
-        "channel": "Antena 3",
-        "source": "IPTV-org España",
-        "url": "https://cdn.stmify.com/zapitv/stream/ANTENA_3/test.mpd",
-        "status": "failed",
-        "reason": "HTTP Error 404: Not Found"
       },
       {
         "channel": "Antena 3",
