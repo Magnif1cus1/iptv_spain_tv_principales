@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-13T12:16:35+00:00",
+  "generated_at_utc": "2026-11-14T11:31:10+00:00",
   "sources": [
     {
       "name": "TDTChannels",
@@ -98,7 +98,7 @@
       "name": "IPTV-org España",
       "url": "https://iptv-org.github.io/iptv/countries/es.m3u",
       "status": "ok",
-      "entries": 325
+      "entries": 331
     },
     {
       "name": "Free-TV España",
@@ -115,10 +115,10 @@
   ],
   "validation": {
     "mode": "hls_manifest_and_segment",
-    "candidate_streams": 113,
-    "passed": 56,
-    "geo_restricted": 26,
-    "failed": 31,
+    "candidate_streams": 117,
+    "passed": 58,
+    "geo_restricted": 24,
+    "failed": 35,
     "checks": [
       {
         "channel": "La 1",
@@ -152,8 +152,8 @@
         "channel": "La 2",
         "source": "TDTChannels",
         "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8",
-        "status": "geo_restricted",
-        "reason": "HTTP Error 403: Geoblock"
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
       },
       {
         "channel": "La 2",
@@ -165,9 +165,16 @@
       {
         "channel": "La 2",
         "source": "IPTV-org España",
-        "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main.m3u8",
-        "status": "geo_restricted",
-        "reason": "HTTP Error 403: Geoblock"
+        "url": "https://cdn.jsdelivr.net/gh/Ignac16/voxel-tv@main/src/constants/channels/la2.m3u8",
+        "status": "ok",
+        "check": "hls_manifest_and_segment"
+      },
+      {
+        "channel": "Antena 3",
+        "source": "IPTV-org España",
+        "url": "https://cdn.jsdelivr.net/gh/Ignac16/voxel-tv@main/src/constants/channels/a3.mpd",
+        "status": "failed",
+        "reason": "La respuesta no es un manifiesto HLS"
       },
       {
         "channel": "Antena 3",
@@ -189,6 +196,13 @@
         "url": "https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_1.m3u8",
         "status": "failed",
         "reason": "HTTP Error 400: Bad Request"
+      },
+      {
+        "channel": "laSexta",
+        "source": "IPTV-org España",
+        "url": "https://cdn.jsdelivr.net/gh/Ignac16/voxel-tv@main/src/constants/channels/la6.mpd",
+        "status": "failed",
+        "reason": "La respuesta no es un manifiesto HLS"
       },
       {
         "channel": "laSexta",
@@ -325,6 +339,13 @@
       },
       {
         "channel": "Neox",
+        "source": "IPTV-org España",
+        "url": "https://cdn.jsdelivr.net/gh/Ignac16/voxel-tv@main/src/constants/channels/neox.mpd",
+        "status": "failed",
+        "reason": "La respuesta no es un manifiesto HLS"
+      },
+      {
+        "channel": "Neox",
         "source": "Free-TV España",
         "url": "http://a3live-lh.akamaihd.net/i/nxhds/geoneox_1@35261/master.m3u8",
         "status": "failed",
@@ -336,6 +357,13 @@
         "url": "http://a3live-lh.akamaihd.net/i/mghds/geomega_1@328914/master.m3u8",
         "status": "failed",
         "reason": "HTTP Error 400: Bad Request"
+      },
+      {
+        "channel": "Atreseries",
+        "source": "IPTV-org España",
+        "url": "https://cdn.jsdelivr.net/gh/Ignac16/voxel-tv@main/src/constants/channels/a3s.mpd",
+        "status": "failed",
+        "reason": "La respuesta no es un manifiesto HLS"
       },
       {
         "channel": "Atreseries",
