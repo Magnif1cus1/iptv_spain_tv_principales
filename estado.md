@@ -1,47 +1,47 @@
 # Estado de la lista
 
-Actualizado: `2026-11-15T11:58:46+00:00`
+Actualizado: `2026-11-16T12:48:45+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **37**
-- Fuentes totales incluidas: **54**
+- Fuentes totales incluidas: **82**
 
 ## Fuentes encontradas
 
-- La 1: 1
-- La 2: 2
-- 24h: 2
-- Teledeporte: 1
-- Clan: 3
-- TRECE: 2
-- El Toro TV: 1
-- Negocios TV: 1
+- La 1: 2
+- La 2: 3
+- 24h: 3
+- Teledeporte: 2
+- Clan: 4
+- TRECE: 3
+- El Toro TV: 2
+- Negocios TV: 2
 - El País: 1
 - RNE para todos: 2
-- Real Madrid TV: 2
+- Real Madrid TV: 3
 - Telemadrid: 1
 - La Otra: 1
-- Canal Sur Andalucía: 2
-- Canal Sur 2: 1
-- Canal Sur Más Noticias: 1
-- TV3: 1
-- TV3 CAT: 2
-- 3CatInfo: 2
-- 33: 3
-- SX3: 1
+- Canal Sur Andalucía: 3
+- Canal Sur 2: 2
+- Canal Sur Más Noticias: 2
+- TV3: 2
+- TV3 CAT: 4
+- 3CatInfo: 6
+- 33: 4
+- SX3: 4
 - Esport3: 3
 - À Punt: 1
 - ETB 1: 1
 - ETB 2: 1
 - Castilla-La Mancha Media: 2
 - Canal Extremadura: 1
-- TV Canaria: 1
-- TVG: 1
-- TVG 2: 1
+- TV Canaria: 2
+- TVG: 2
+- TVG 2: 2
 - Telemiño: 1
 - TeleVigo: 2
-- betevé: 1
-- Bon Dia TV: 1
+- betevé: 2
+- Bon Dia TV: 2
 - La 8 Mediterráneo: 1
 - Distrito TV: 2
 - Sol Música: 1
@@ -80,7 +80,7 @@ Actualizado: `2026-11-15T11:58:46+00:00`
 
 ## Listas consultadas
 
-- TDTChannels: error — No se pudo descargar https://www.tdtchannels.com/lists/tv.m3u8: HTTP Error 403: Forbidden
+- TDTChannels: ok — 574 entradas
 - IPTV-org España: ok — 338 entradas
 - Free-TV España: ok — 48 entradas
 - Teleonline: ok — 576 entradas
@@ -88,13 +88,15 @@ Actualizado: `2026-11-15T11:58:46+00:00`
 ## Comprobación de enlaces
 
 - Modo: hls_manifest_and_segment
-- Comprobados (manifiesto y fragmento): 41
-- Conservados por restricción geográfica, sin comprobar: 13
+- Comprobados (manifiesto y fragmento): 56
+- Conservados por restricción geográfica, sin comprobar: 26
 - Descartados: 38
 
+- La 1 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - La 1 (IPTV-org España): Descartado — HTTP Error 404: Not Found
 - La 1 (IPTV-org España): Descartado — HTTP Error 403: Forbidden
-- La 1 (Free-TV España): Conservado por geobloqueo — HTTP Error 403: Geoblock
+- La 2 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
+- La 2 (IPTV-org España): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - Antena 3 (IPTV-org España): Descartado — La respuesta no es un manifiesto HLS
 - Antena 3 (Free-TV España): Descartado — <urlopen error [Errno 111] Connection refused>
 - Cuatro (Free-TV España): Descartado — HTTP Error 400: Bad Request
@@ -102,11 +104,11 @@ Actualizado: `2026-11-15T11:58:46+00:00`
 - laSexta (IPTV-org España): Descartado — La respuesta no es un manifiesto HLS
 - laSexta (IPTV-org España): Descartado — La respuesta no es un manifiesto HLS
 - laSexta (Free-TV España): Descartado — HTTP Error 400: Bad Request
+- Teledeporte (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - Teledeporte (IPTV-org España): Descartado — <urlopen error [Errno -2] Name or service not known>
-- Teledeporte (Free-TV España): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - Teledeporte (Teleonline): Descartado — Cifrado DRM/no compatible con la lista VLC
-- Clan (Free-TV España): Conservado por geobloqueo — HTTP Error 403: Geoblock
-- Clan (Teleonline): Conservado por geobloqueo — HTTP Error 403: Geoblock
+- Clan (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
+- Clan (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - FDF (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - Energy (Free-TV España): Descartado — HTTP Error 403: Forbidden
 - Divinity (Free-TV España): Descartado — HTTP Error 403: Forbidden
@@ -121,25 +123,36 @@ Actualizado: `2026-11-15T11:58:46+00:00`
 - Boing (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - Squirrel (Free-TV España): Descartado — HTTP Error 403: Forbidden
 - BOM Cine (Free-TV España): Descartado — HTTP Error 403: Forbidden
-- Euronews (Free-TV España): Descartado — HTTP Error 403: Restricted Content
+- Euronews (TDTChannels): Descartado — HTTP Error 403: Restricted Content
 - Telemadrid (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - La Otra (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - Canal Sur Andalucía (Free-TV España): Descartado — HTTP Error 404: Not Found
-- TV3 (IPTV-org España): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
+- TV3 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
+- TV3 CAT (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
+- TV3 CAT (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
 - TV3 CAT (IPTV-org España): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
-- 33 (IPTV-org España): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
-- 33 (Free-TV España): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
-- 33 (Teleonline): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
-- SX3 (IPTV-org España): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
+- 3CatInfo (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
+- 3CatInfo (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
+- 3CatInfo (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
+- 3CatInfo (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
+- 33 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
+- 33 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
+- 33 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
+- 33 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
+- SX3 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
+- SX3 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
+- SX3 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
+- SX3 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
+- Esport3 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
+- Esport3 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
 - Esport3 (IPTV-org España): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
-- Esport3 (Free-TV España): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
-- Esport3 (Teleonline): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
 - À Punt (Free-TV España): Descartado — HTTP Error 400: Bad Request
 - Aragón TV (Free-TV España): Descartado — <urlopen error [Errno -2] Name or service not known>
-- ETB 1 (IPTV-org España): Descartado — Cifrado DRM/no compatible con la lista VLC
-- ETB 2 (IPTV-org España): Descartado — Cifrado DRM/no compatible con la lista VLC
+- ETB 1 (TDTChannels): Descartado — Cifrado DRM/no compatible con la lista VLC
+- ETB 2 (TDTChannels): Descartado — Cifrado DRM/no compatible con la lista VLC
 - Canal Extremadura (IPTV-org España): Descartado — HTTP Error 404: Not Found
 - Canal Extremadura (Teleonline): Descartado — <urlopen error [Errno -5] No address associated with hostname>
 - TV Canaria (Teleonline): Descartado — La respuesta no es un manifiesto HLS
 - IB3 (Free-TV España): Descartado — La respuesta no es un manifiesto HLS
 - La 7 Murcia (Free-TV España): Descartado — HTTP Error 403: Not Authorized jwt:anonymous (no valid jwt payload)  token source: header
+- Bon Dia TV (TDTChannels): Conservado por geobloqueo — HTTP Error 403: geofence:blocked
