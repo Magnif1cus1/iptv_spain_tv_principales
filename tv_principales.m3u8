@@ -56,6 +56,12 @@ https://play.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/live.smil/playl
 #EXTINF:-1 tvg-id="TRECE.es" tvg-name="TRECE" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TRECE.png" group-title="Favoritos España",TRECE — Fuente 3
 https://live-edge-eu-1.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/liveld/index.m3u8
 
+#EXTINF:-1 tvg-name="Squirrel" tvg-id="Squirrel.es@SD" tvg-logo="https://i.imgur.com/9y8VcBr.png" group-title="Favoritos España",Squirrel
+https://cdn78-at.azotosolutions.com/cdnedge39/Canale1/master.m3u8
+
+#EXTINF:-1 tvg-name="BOM Cine" tvg-id="BomCine.es@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Logo-bom.svg/960px-Logo-bom.svg.png" group-title="Favoritos España",BOM Cine
+https://cdn78-at.azotosolutions.com/cdnedge39/Canale3/master.m3u8
+
 #EXTINF:-1 tvg-id="ElToroTV.TV" tvg-logo="https://graph.facebook.com/eltorotv.es/picture?width=200&height=200" group-title="Favoritos España" tvg-name="El Toro TV",El Toro TV — Fuente 1
 https://streaming-1.eltorotv.com/lb0/eltorotv-streaming-web/index.m3u8
 

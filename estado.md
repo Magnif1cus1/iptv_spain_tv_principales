@@ -1,10 +1,10 @@
 # Estado de la lista
 
-Actualizado: `2026-11-16T12:48:45+00:00`
+Actualizado: `2026-11-17T13:29:56+00:00`
 
 - Canales solicitados: **62**
-- Canales con al menos una fuente: **37**
-- Fuentes totales incluidas: **82**
+- Canales con al menos una fuente: **39**
+- Fuentes totales incluidas: **84**
 
 ## Fuentes encontradas
 
@@ -14,6 +14,8 @@ Actualizado: `2026-11-16T12:48:45+00:00`
 - Teledeporte: 2
 - Clan: 4
 - TRECE: 3
+- Squirrel: 1
+- BOM Cine: 1
 - El Toro TV: 2
 - Negocios TV: 2
 - El País: 1
@@ -64,8 +66,6 @@ Actualizado: `2026-11-16T12:48:45+00:00`
 - Boing
 - DKISS
 - Ten
-- Squirrel
-- BOM Cine
 - GOL Play
 - Euronews
 - Aragón TV
@@ -81,14 +81,14 @@ Actualizado: `2026-11-16T12:48:45+00:00`
 ## Listas consultadas
 
 - TDTChannels: ok — 574 entradas
-- IPTV-org España: ok — 338 entradas
+- IPTV-org España: ok — 343 entradas
 - Free-TV España: ok — 48 entradas
 - Teleonline: ok — 576 entradas
 
 ## Comprobación de enlaces
 
 - Modo: hls_manifest_and_segment
-- Comprobados (manifiesto y fragmento): 56
+- Comprobados (manifiesto y fragmento): 58
 - Conservados por restricción geográfica, sin comprobar: 26
 - Descartados: 38
 
