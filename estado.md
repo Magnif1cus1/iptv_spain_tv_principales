@@ -1,6 +1,6 @@
 # Estado de la lista
 
-Actualizado: `2026-11-19T13:16:14+00:00`
+Actualizado: `2026-11-20T12:57:59+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **39**
@@ -81,7 +81,7 @@ Actualizado: `2026-11-19T13:16:14+00:00`
 ## Listas consultadas
 
 - TDTChannels: ok — 574 entradas
-- IPTV-org España: ok — 343 entradas
+- IPTV-org España: ok — 344 entradas
 - Free-TV España: ok — 48 entradas
 - Teleonline: ok — 576 entradas
 
