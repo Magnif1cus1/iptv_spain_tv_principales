@@ -1,6 +1,6 @@
 # Estado de la lista
 
-Actualizado: `2026-11-20T12:57:59+00:00`
+Actualizado: `2026-11-21T12:42:16+00:00`
 
 - Canales solicitados: **62**
 - Canales con al menos una fuente: **39**
@@ -81,21 +81,20 @@ Actualizado: `2026-11-20T12:57:59+00:00`
 ## Listas consultadas
 
 - TDTChannels: ok — 574 entradas
-- IPTV-org España: ok — 344 entradas
+- IPTV-org España: ok — 340 entradas
 - Free-TV España: ok — 48 entradas
 - Teleonline: ok — 576 entradas
 
 ## Comprobación de enlaces
 
 - Modo: hls_manifest_and_segment
-- Comprobados (manifiesto y fragmento): 58
-- Conservados por restricción geográfica, sin comprobar: 25
+- Comprobados (manifiesto y fragmento): 59
+- Conservados por restricción geográfica, sin comprobar: 24
 - Descartados: 39
 
 - La 1 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - La 1 (IPTV-org España): Descartado — HTTP Error 404: Not Found
 - La 1 (IPTV-org España): Descartado — HTTP Error 403: Forbidden
-- La 2 (TDTChannels): Conservado por geobloqueo — HTTP Error 403: Geoblock
 - La 2 (IPTV-org España): Descartado — HTTP Error 404: Not Found
 - Antena 3 (IPTV-org España): Descartado — HTTP Error 404: Not Found
 - Antena 3 (Free-TV España): Descartado — <urlopen error [Errno 111] Connection refused>
